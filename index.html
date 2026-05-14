@@ -1,495 +1,784 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shirish Man Shakya — Data Analyst</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Shirish Man Shakya, Data Analyst and ML Engineer based in Sydney, NSW. Master of Data Science from UTS." />
+  <title>Shirish Man Shakya | Data Analyst &amp; ML Engineer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@200;300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
 
-<!-- NAV -->
-<nav>
-  <div class="nav-inner">
-    <a href="#" class="nav-name">Shirish Shakya</a>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </div>
-</nav>
-
-<!-- HERO -->
-<div class="hero">
-
-  <!-- LEFT CONTENT -->
-  <div>
-    <div class="status-badge">
-      <span class="status-dot"></span>
-      Open to work · Sydney, NSW
-    </div>
-
-    <div class="hero-label">Data Analyst &amp; ML Engineer</div>
-
-    <h1>Shirish Man<br>Shakya</h1>
-
-    <p class="hero-desc">
-      Master of Data Science graduate from UTS, building analytics pipelines, ML models, and dashboards that turn raw data into decisions.
-    </p>
-
-    <div class="hero-links">
-      <a href="#projects" class="btn btn-primary">View Projects ↓</a>
-      <a href="https://github.com/Shakya658" target="_blank" class="btn btn-outline">GitHub</a>
-      <a href="https://linkedin.com/in/shirish-man-shakya" target="_blank" class="btn btn-outline">LinkedIn</a>
-      <a href="mailto:shirishshakya4@gmail.com" class="btn btn-outline">Email</a>
-    </div>
+  <!-- ═══════════════════════════════════════════════
+       AMBIENT BACKGROUND CANVAS (pure CSS blobs)
+  ═══════════════════════════════════════════════ -->
+  <div class="ambient" aria-hidden="true">
+    <div class="ambient__blob ambient__blob--1"></div>
+    <div class="ambient__blob ambient__blob--2"></div>
+    <div class="ambient__blob ambient__blob--3"></div>
+    <div class="ambient__grid"></div>
   </div>
 
-  <!-- RIGHT IMAGE -->
-  <div class="hero-image">
-    <img src="images/profile.png" alt="Shirish Profile">
-  </div>
-
-</div>
-
-<hr class="section-divider">
-
-<!-- ABOUT -->
-<section id="about">
-  <div class="section-header">
-    <h2 class="section-title">About</h2>
-  </div>
-  <div class="about-grid">
-    <div class="about-text">
-      <p>
-        I'm a data analyst and ML practitioner with a Master of Data Science from UTS (GPA 6.09/7.0, Academic Excellence Scholarship). My work spans the full data lifecycle — from designing PostgreSQL pipelines and building ML classifiers to delivering dashboards that non-technical stakeholders can actually use.
-      </p>
-      <p>
-        Four end-to-end projects covering retail analytics, customer churn, clinical risk modelling, and cancer genomics. Comfortable in SQL, Python, Tableau, Power BI, Snowflake, and GCP. Looking for a junior data analyst, business analyst, or ML engineer role where I can contribute technically from day one.
-      </p>
-    </div>
-    <div class="about-meta">
-      <div class="meta-item"><span class="meta-icon">📍</span> Sydney, NSW, Australia</div>
-      <div class="meta-item"><span class="meta-icon">🎓</span> UTS — Master of Data Science</div>
-      <div class="meta-item"><span class="meta-icon">🏅</span> Academic Excellence Scholarship</div>
-      <div class="meta-item"><span class="meta-icon">🇦🇺</span> ACS Member</div>
-      <div class="meta-item"><span class="meta-icon">🌐</span> PTE Band 90 (English)</div>
-    </div>
-  </div>
-</section>
-
-<hr class="section-divider">
-
-<!-- PROJECTS -->
-<section id="projects">
-  <div class="section-header">
-    <h2 class="section-title">Projects</h2>
-    <span class="section-count"></span>
-  </div>
-
-  <div class="projects-grid">
-
-    <!-- PROJECT 1 -->
-    <div class="project-card" data-accent="blue">
-      <div class="project-thumb">
-        <img src="images/Retail.jpg" alt="Retail Sales Analytics Pipeline"> 
- 
-      </div>
-      <div class="project-body">
-        <div class="project-header">
-          <h3 class="project-title">Retail Sales Analytics Pipeline</h3>
-          <span class="project-tag">SQL · Data Eng</span>
-        </div>
-        <p class="project-summary">Production-style analytics pipeline processing 1.6M+ e-commerce transactions across 9 relational tables.</p>
-        <div class="project-details">
-          <div class="detail-block">
-            <div class="detail-label">Problem</div>
-            <div class="detail-text">Raw e-commerce transactions had no analytical structure — no customer segmentation, no delivery performance tracking, no revenue attribution.</div>
-          </div>
-          <div class="detail-block">
-            <div class="detail-label">Approach</div>
-            <div class="detail-text">Designed a full Medallion Architecture (Bronze → Silver → Gold) in PostgreSQL. Applied RFM analysis, cohort analysis, and window functions across 9 relational tables.</div>
-          </div>
-          <div class="detail-block">
-            <div class="detail-label">Key Insights</div>
-            <ul class="insights-list">
-              <li>Champions (12.3% of customers) drive 21.1% of total revenue</li>
-              <li>Potential Loyalists (24.8%) contribute only 8.6% — clear upsell opportunity</li>
-              <li>Victoria: top-volume market but 86.82% on-time delivery — logistics underperformer</li>
-            </ul>
-          </div>
-        </div>
-        <div class="tech-stack">
-          <span class="tech-tag">PostgreSQL</span>
-          <span class="tech-tag">Medallion Architecture</span>
-          <span class="tech-tag">CTEs</span>
-          <span class="tech-tag">Window Functions</span>
-          <span class="tech-tag">RFM Analysis</span>
-          <span class="tech-tag">Cohort Analysis</span>
-        </div>
-        <div class="project-footer">
-          <a href="https://github.com/Shakya658/retail-sql-analytics" target="_blank" class="project-link">
-            View on GitHub
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M8 3l5 5-5 5"/></svg>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <!-- PROJECT 2 -->
-    <div class="project-card" data-accent="amber">
-      <div class="project-thumb">
-        <img src="images/churn.png" alt="Customer Churn Analysis Dashboard"> 
-        <div class="thumb-placeholder">
-
-        </div>
-      </div>
-      <div class="project-body">
-        <div class="project-header">
-          <h3 class="project-title">Customer Churn Analysis &amp; Revenue Recovery</h3>
-          <span class="project-tag">ML · Streamlit</span>
-        </div>
-        <p class="project-summary">Predictive churn model identifying high-risk telecom customers with $120K annual revenue recovery potential.</p>
-        <div class="project-details">
-          <div class="detail-block">
-            <div class="detail-label">Problem</div>
-            <div class="detail-text">Telecom business losing customers with no visibility into who was at risk or why — retention was reactive, not predictive.</div>
-          </div>
-          <div class="detail-block">
-            <div class="detail-label">Approach</div>
-            <div class="detail-text">Benchmarked Logistic Regression, Random Forest, and XGBoost on 7,043 customer records. Engineered 15+ behavioural features. Built a Streamlit dashboard for non-technical stakeholders.</div>
-          </div>
-          <div class="detail-block">
-            <div class="detail-label">Key Insights</div>
-            <ul class="insights-list">
-              <li>ROC AUC 0.85, 81% accuracy via cross-validation</li>
-              <li>Estimated $120K annual revenue recovery potential identified</li>
-              <li>XGBoost outperformed — contract type and tenure were top churn drivers</li>
-            </ul>
-          </div>
-        </div>
-        <div class="tech-stack">
-          <span class="tech-tag">Python</span>
-          <span class="tech-tag">XGBoost</span>
-          <span class="tech-tag">Scikit-learn</span>
-          <span class="tech-tag">Streamlit</span>
-          <span class="tech-tag">SQL</span>
-          <span class="tech-tag">Logistic Regression</span>
-        </div>
-        <div class="project-footer">
-          <a href="https://github.com/Shakya658/customer-churn" target="_blank" class="project-link">
-            View on GitHub
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M8 3l5 5-5 5"/></svg>
-          </a>
-           <a href="https://customer-churn-32.streamlit.app/" target="_blank" class="project-link">
-            Live Demo
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M8 3l5 5-5 5"/></svg>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <!-- PROJECT 3 -->
-    <div class="project-card" data-accent="green">
-      <div class="project-thumb">
-        <img src="images/readmission.png" alt="Hospital Readmission Risk Dashboard"> -->
-      </div>
-      <div class="project-body">
-        <div class="project-header">
-          <h3 class="project-title">30-Day Hospital Readmission Risk</h3>
-          <span class="project-tag">Clinical AI · XAI</span>
-        </div>
-        <p class="project-summary">Clinical risk prediction model on 101,766 patient records with explainable AI dashboard for healthcare users.</p>
-        <div class="project-details">
-          <div class="detail-block">
-            <div class="detail-label">Problem</div>
-            <div class="detail-text">Hospitals need to flag high-risk patients before discharge, but clinicians can't trust a black-box model — interpretability is non-negotiable in healthcare.</div>
-          </div>
-          <div class="detail-block">
-            <div class="detail-label">Approach</div>
-            <div class="detail-text">Engineered 96 features. Addressed class imbalance with stratified 5-fold CV. Bayesian hyperparameter tuning via Optuna (50 trials). SHAP for explainability.</div>
-          </div>
-          <div class="detail-block">
-            <div class="detail-label">Key Insights</div>
-            <ul class="insights-list">
-              <li>ROC AUC 0.67 — consistent with published clinical benchmarks</li>
-              <li>SHAP surfaced interpretable clinical risk factors per patient</li>
-              <li>Streamlit interface built for non-technical clinical users</li>
-            </ul>
-          </div>
-        </div>
-        <div class="tech-stack">
-          <span class="tech-tag">Python</span>
-          <span class="tech-tag">XGBoost</span>
-          <span class="tech-tag">SHAP</span>
-          <span class="tech-tag">Optuna</span>
-          <span class="tech-tag">Streamlit</span>
-          <span class="tech-tag">Scikit-learn</span>
-        </div>
-        <div class="project-footer">
-          <a href="https://github.com/Shakya658/clinical-readmission-risk" target="_blank" class="project-link">
-            View on GitHub
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M8 3l5 5-5 5"/></svg>
-          </a>
-            <a href="https://shakya658-clinical-readmission-risk-app-lwev3d.streamlit.app" target="_blank" class="project-link">
-            Live Demo
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M8 3l5 5-5 5"/></svg>
-          </a>
-          
-        </div>
-      </div>
-    </div>
-
-    <!-- PROJECT 4 -->
-    <div class="project-card" data-accent="coral">
-      <div class="project-thumb">
-        <img src="images/gene.jpg" alt="Cancer Risk Stratification">
-
-      </div>
-      <div class="project-body">
-        <div class="project-header">
-          <h3 class="project-title">Cancer Risk Stratification via Multi-Omics</h3>
-          <span class="project-tag">Capstone · HD</span>
-        </div>
-        <p class="project-summary">Multi-omics analysis of 1,200 colorectal cancer patients — graded High Distinction by UTS academic examiners.</p>
-        <div class="project-details">
-          <div class="detail-block">
-            <div class="detail-label">Problem</div>
-            <div class="detail-text">Colorectal cancer treatment is not one-size-fits-all — identifying clinically distinct patient subgroups from high-dimensional biological data requires dimensionality reduction and unsupervised learning.</div>
-          </div>
-          <div class="detail-block">
-            <div class="detail-label">Approach</div>
-            <div class="detail-text">Integrated four biological data types. Reduced feature dimensionality by 80% to isolate meaningful signals. Applied unsupervised clustering and SHAP to explain subgroup drivers.</div>
-          </div>
-          <div class="detail-block">
-            <div class="detail-label">Key Insights</div>
-            <ul class="insights-list">
-              <li>Identified 3 clinically distinct patient risk subgroups</li>
-              <li>SHAP surfaced top 15 biomarkers per subgroup</li>
-              <li>80% dimensionality reduction without loss of clinical signal</li>
-            </ul>
-          </div>
-        </div>
-        <div class="tech-stack">
-          <span class="tech-tag">Python</span>
-          <span class="tech-tag">Pandas</span>
-          <span class="tech-tag">SHAP</span>
-          <span class="tech-tag">Scikit-learn</span>
-          <span class="tech-tag">Dimensionality Reduction</span>
-          <span class="tech-tag">Clustering</span>
-        </div>
-        <div class="project-footer">
-          <span style="font-size:0.8rem; color: var(--text-faint); font-family: var(--mono);">UTS Capstone · 2024</span>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<hr class="section-divider">
-
-<!-- SKILLS -->
-<section id="skills">
-  <div class="section-header">
-    <h2 class="section-title">Skills</h2>
-  </div>
-  <div class="skills-grid">
-    <div class="skill-group">
-      <div class="skill-group-name">SQL &amp; Data Warehousing</div>
-      <div class="skill-pills">
-        <span class="skill-pill">PostgreSQL</span>
-        <span class="skill-pill">Snowflake</span>
-        <span class="skill-pill">BigQuery</span>
-        <span class="skill-pill">CTEs</span>
-        <span class="skill-pill">Window Functions</span>
-        <span class="skill-pill">Data Modelling</span>
-      </div>
-    </div>
-    <div class="skill-group">
-      <div class="skill-group-name">Python</div>
-      <div class="skill-pills">
-        <span class="skill-pill">Pandas</span>
-        <span class="skill-pill">NumPy</span>
-        <span class="skill-pill">Scikit-learn</span>
-        <span class="skill-pill">XGBoost</span>
-        <span class="skill-pill">SciPy</span>
-        <span class="skill-pill">Automation</span>
-      </div>
-    </div>
-    <div class="skill-group">
-      <div class="skill-group-name">Machine Learning</div>
-      <div class="skill-pills">
-        <span class="skill-pill">Classification</span>
-        <span class="skill-pill">Clustering</span>
-        <span class="skill-pill">SHAP</span>
-        <span class="skill-pill">Optuna</span>
-        <span class="skill-pill">Cross-validation</span>
-        <span class="skill-pill">Feature Engineering</span>
-      </div>
-    </div>
-    <div class="skill-group">
-      <div class="skill-group-name">Visualisation &amp; BI</div>
-      <div class="skill-pills">
-        <span class="skill-pill">Tableau</span>
-        <span class="skill-pill">Power BI</span>
-        <span class="skill-pill">Streamlit</span>
-        <span class="skill-pill">Matplotlib</span>
-        <span class="skill-pill">Seaborn</span>
-      </div>
-    </div>
-    <div class="skill-group">
-      <div class="skill-group-name">Cloud &amp; Data Engineering</div>
-      <div class="skill-pills">
-        <span class="skill-pill">GCP</span>
-        <span class="skill-pill">Apache Airflow</span>
-        <span class="skill-pill">ETL Pipelines</span>
-        <span class="skill-pill">Cloud Composer</span>
-        <span class="skill-pill">Git</span>
-        <span class="skill-pill">Linux</span>
-      </div>
-    </div>
-    <div class="skill-group">
-      <div class="skill-group-name">Statistics &amp; Methods</div>
-      <div class="skill-pills">
-        <span class="skill-pill">Hypothesis Testing</span>
-        <span class="skill-pill">A/B Testing</span>
-        <span class="skill-pill">Bayesian Optimisation</span>
-        <span class="skill-pill">RFM Analysis</span>
-        <span class="skill-pill">Cohort Analysis</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<hr class="section-divider">
-
-<!-- EXPERIENCE -->
-<section id="experience">
-  <div class="section-header">
-    <h2 class="section-title">Experience</h2>
-  </div>
-  <div class="exp-list">
-
-    <div class="exp-item">
-      <div class="exp-meta">
-        <div class="exp-date">Aug 2022 – Jul 2024</div>
-        <div class="exp-company">Invisible Technologies</div>
-        <div class="exp-location">Remote</div>
-      </div>
-      <div>
-        <div class="exp-role">Data Operations Specialist</div>
-        <ul class="exp-points">
-          <li>Built Python automation scripts to extract and validate data from billing PDFs, eliminating manual entry across enterprise client workflows</li>
-          <li>Transformed unstructured billing records into clean, structured datasets for automated compliance reporting on a sustainability analytics platform</li>
-          <li>Large-scale dataset validation ensuring accuracy and consistency across multiple client engagements</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="exp-item">
-      <div class="exp-meta">
-        <div class="exp-date">Mar 2020 – Aug 2022</div>
-        <div class="exp-company">Tripura Secondary School</div>
-        <div class="exp-location">Kathmandu, Nepal</div>
-      </div>
-      <div>
-        <div class="exp-role">IT Systems &amp; Data Supervisor</div>
-        <ul class="exp-points">
-          <li>Designed and implemented relational database systems and network infrastructure from scratch, improving operational efficiency by ~25%</li>
-          <li>Led migration to remote systems during COVID-19, maintaining continuity for 50+ students and staff</li>
-        </ul>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- Education here feels natural -->
-  <div style="margin-top: 3rem;">
-    <div class="section-header">
-      <h2 class="section-title">Education</h2>
-    </div>
-    <div class="edu-list">
-      <div class="edu-item">
-        <div>
-          <div class="edu-degree">Master of Data Science and Innovation</div>
-          <div class="edu-school">University of Technology Sydney (UTS)</div>
-        </div>
-        <div class="edu-right">
-          <div class="edu-date">Jun 2023 – Jun 2025</div>
-          <div class="edu-badge">GPA 6.09 / 7.0</div>
-        </div>
-      </div>
-      <div class="edu-item">
-        <div>
-          <div class="edu-degree">Professional Year Program, Information Technology</div>
-          <div class="edu-school">QIBA · Sydney, NSW</div>
-        </div>
-        <div class="edu-right">
-          <div class="edu-date">Jan 2026 – Present</div>
-          <div class="edu-badge">In progress</div>
-        </div>
-      </div>
-      <div class="edu-item">
-        <div>
-          <div class="edu-degree">Bachelor of Engineering, Computer Science</div>
-          <div class="edu-school">Nitte Meenakshi Institute of Technology · India</div>
-        </div>
-        <div class="edu-right">
-          <div class="edu-date">Jun 2017 – Jun 2021</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<hr class="section-divider">
-
-<!-- CONTACT -->
-<section id="contact">
-  <div class="section-header">
-    <h2 class="section-title">Get in Touch</h2>
-  </div>
-  <div class="contact-grid">
-    <div class="contact-text">
-      <h3>Open to junior data, analyst, and ML engineer roles in Sydney.</h3>
-      <p>If you're working on something interesting or have a role that fits, I'd love to hear from you. I'm also happy to discuss any of the projects above in more detail.</p>
-      <a href="mailto:shirishshakya4@gmail.com" class="btn btn-primary" style="width: fit-content;">Send an Email →</a>
-    </div>
-    <div class="contact-links">
-      <a href="mailto:shirishshakya4@gmail.com" class="contact-link">
-        <span class="contact-link-icon">✉</span>
-        <span class="contact-link-label">Email</span>
-        <span class="contact-link-value">shirishshakya4@gmail.com</span>
+  <!-- ═══════════════════════════════════════════════
+       NAV
+  ═══════════════════════════════════════════════ -->
+  <nav id="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo">
+        SMS<span class="nav__logo-dot">.</span>
       </a>
-      <a href="https://linkedin.com/in/shirish-man-shakya" target="_blank" class="contact-link">
-        <span class="contact-link-icon">in</span>
-        <span class="contact-link-label">LinkedIn</span>
-        <span class="contact-link-value">shirish-man-shakya</span>
-      </a>
-      <a href="https://github.com/Shakya658" target="_blank" class="contact-link">
-        <span class="contact-link-icon">⌥</span>
-        <span class="contact-link-label">GitHub</span>
-        <span class="contact-link-value">Shakya658</span>
-      </a>
-      <div class="contact-link" style="cursor: default;">
-        <span class="contact-link-icon">📞</span>
-        <span class="contact-link-label">Phone</span>
-        <span class="contact-link-value">0492 877 385</span>
+      <ul class="nav__links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav__resume-btn" onclick="downloadResume()">
+        <span>Resume</span>
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+          <path d="M6 1v7M3 5l3 3 3-3M1 10h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════════ -->
+  <section id="hero" class="hero">
+    <div class="hero__inner">
+
+      <!-- Left column: text -->
+      <div class="hero__text">
+        <div class="hero__available">
+          <span class="hero__dot"></span>
+          Open to opportunities · Sydney, NSW
+        </div>
+
+        <p class="hero__eyebrow">Data Analyst &amp; ML Engineer</p>
+
+        <h1 class="hero__name">
+          Shirish<br />
+          <span class="hero__name-accent">Man</span> Shakya
+        </h1>
+
+        <p class="hero__desc">
+          UTS Master of Data Science graduate (GPA 6.09/7, Academic Excellence Scholarship).
+          I turn raw data into business decisions using SQL, Python, ML models and Power BI.
+        </p>
+
+        <!-- Stats row -->
+        <div class="hero__stats">
+          <div class="hero__stat">
+            <span class="hero__stat-value">4</span>
+            <span class="hero__stat-label">End-to-end projects</span>
+          </div>
+          <div class="hero__stat-sep"></div>
+          <div class="hero__stat">
+            <span class="hero__stat-value">$120K</span>
+            <span class="hero__stat-label">Retention uplift modelled</span>
+          </div>
+          <div class="hero__stat-sep"></div>
+          <div class="hero__stat">
+            <span class="hero__stat-value">HD</span>
+            <span class="hero__stat-label">Capstone distinction</span>
+          </div>
+        </div>
+
+        <!-- CTA buttons -->
+        <div class="hero__ctas">
+          <a href="#projects" class="btn btn--primary">
+            View Projects
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a href="#contact" class="btn btn--ghost">Get in touch</a>
+        </div>
+      </div>
+
+      <!-- Right column: portrait placeholder + floating cards -->
+      <div class="hero__visual">
+
+        <!--
+          ╔══════════════════════════════════════════════╗
+          ║  PHOTO SLOT                                  ║
+          ║  Replace src with your actual photo URL or   ║
+          ║  a relative path like: assets/photo.jpg      ║
+          ╚══════════════════════════════════════════════╝
+        -->
+        <div class="hero__portrait-wrap">
+          <img
+            src="assets/photo.jpg"
+            alt="Portrait of Shirish Man Shakya"
+            class="hero__portrait"
+            onerror="this.closest('.hero__portrait-wrap').classList.add('hero__portrait-wrap--fallback')"
+          />
+          <!-- Shown when image fails to load -->
+          <div class="hero__portrait-fallback" aria-hidden="true">
+            <span class="hero__portrait-initials">SMS</span>
+            <p class="hero__portrait-hint">
+              Add your photo at<br />
+              <code>assets/photo.jpg</code>
+            </p>
+          </div>
+          <div class="hero__portrait-ring"></div>
+        </div>
+
+        <!-- Floating metric cards -->
+        <div class="hero__card hero__card--auc">
+          <span class="hero__card-label">Best ROC AUC</span>
+          <span class="hero__card-value">0.85</span>
+          <span class="hero__card-sub">Churn model · XGBoost</span>
+        </div>
+
+        <div class="hero__card hero__card--gpa">
+          <span class="hero__card-label">GPA</span>
+          <span class="hero__card-value">6.09<span class="hero__card-denom">/7</span></span>
+          <span class="hero__card-sub">UTS Master of Data Science</span>
+        </div>
+
+        <div class="hero__card hero__card--rows">
+          <span class="hero__card-label">Records processed</span>
+          <span class="hero__card-value">1.6M<span class="hero__card-denom">+</span></span>
+          <span class="hero__card-sub">Retail analytics pipeline</span>
+        </div>
+
+      </div><!-- /.hero__visual -->
+    </div><!-- /.hero__inner -->
+
+    <!-- scroll indicator -->
+    <div class="hero__scroll" aria-hidden="true">
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
+       ABOUT
+  ═══════════════════════════════════════════════ -->
+  <section id="about" class="section">
+    <div class="section__inner">
+
+      <div class="section__header reveal">
+        <p class="section__tag">01 · About</p>
+        <h2 class="section__title">Background</h2>
+      </div>
+
+      <div class="about__grid">
+        <div class="about__text reveal">
+          <p>
+            I'm a data analyst who gets genuinely excited about messy datasets. Most of my project work
+            sits somewhere between SQL pipeline engineering and ML modelling, with a lot of Power BI and
+            stakeholder communication in between. I like problems where the answer actually changes what
+            a team does next.
+          </p>
+          <p>
+            Before Sydney I ran IT systems and databases for a school in Kathmandu, including a full
+            remote migration during COVID-19 for 50+ staff and students. That role made me care a lot
+            about data reliability and clear reporting, not just clever analysis. I'm an ACS member,
+            currently in my Professional Year and actively looking for junior DA, BA or ML roles.
+          </p>
+
+          <!--
+            ╔══════════════════════════════════════════════╗
+            ║  ABOUT PHOTO SLOT                            ║
+            ║  A second, more relaxed photo works well     ║
+            ║  here — e.g. at a desk, whiteboard, or café  ║
+            ║  Replace src: assets/about-photo.jpg         ║
+            ╚══════════════════════════════════════════════╝
+          -->
+          <div class="about__photo-wrap reveal reveal-delay-2">
+            <img
+              src="assets/about-photo.jpg"
+              alt="Shirish at work"
+              class="about__photo"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"
+            />
+            <div class="about__photo-placeholder">
+              <span>📸</span>
+              <p>Casual photo<br /><code>assets/about-photo.jpg</code></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__sidebar reveal reveal-delay-2">
+          <ul class="meta-list">
+            <li class="meta-item">
+              <span class="meta-icon">📍</span>
+              <span>Sydney, NSW 2000</span>
+            </li>
+            <li class="meta-item">
+              <span class="meta-icon">🎓</span>
+              <span>UTS Master of Data Science</span>
+            </li>
+            <li class="meta-item">
+              <span class="meta-icon">💼</span>
+              <span>Open to junior DA / BA / ML roles</span>
+            </li>
+            <li class="meta-item">
+              <span class="meta-icon">🤝</span>
+              <span>ACS Member</span>
+            </li>
+            <li class="meta-item">
+              <span class="meta-icon">🌏</span>
+              <span>Work rights · Australian PR</span>
+            </li>
+          </ul>
+
+          <div class="about__tech-note">
+            <p class="about__tech-note-label">Currently learning</p>
+            <div class="about__tech-tags">
+              <span class="tag">Apache Spark</span>
+              <span class="tag">Azure Data Factory</span>
+              <span class="tag">LangChain</span>
+              <span class="tag">MicroStrategy</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<footer>
-  Shirish Man Shakya · Data Analyst · Sydney, NSW · Built with HTML/CSS · Hosted on GitHub Pages
-</footer>
+
+  <!-- ═══════════════════════════════════════════════
+       PROJECTS
+  ═══════════════════════════════════════════════ -->
+  <section id="projects" class="section">
+    <div class="section__inner">
+
+      <div class="section__header reveal">
+        <p class="section__tag">02 · Featured Projects (Selected Impact Work)</p>
+        <h2 class="section__title">Selected Work</h2>
+        <p class="section__subtitle">Four personal projects across retail ops, customer retention, clinical AI and cancer genomics. All solo work.</p>
+      </div>
+
+      <div class="projects__grid">
+
+        <!-- ── Project 1 ─────────────────────────────────── -->
+        <article class="project-card reveal" data-accent="blue">
+          <!--
+            PHOTO SLOT: assets/proj-churn.jpg
+            Good fit: Power BI dashboard, ROC curve, or SHAP beeswarm plot
+            Recommended size: 800x350px
+          -->
+          <div class="project-card__thumb">
+            <img
+              src="assets/proj-churn.jpg"
+              alt="Customer churn Power BI dashboard screenshot"
+              class="project-card__img"
+              onerror="this.closest('.project-card__thumb').classList.add('project-card__thumb--empty')"
+            />
+            <div class="project-card__thumb-placeholder">
+              <div class="thumb-icon">📊</div>
+              <p>Screenshot: <code>assets/proj-churn.jpg</code></p>
+            </div>
+            <span class="project-card__badge">ML · Python · Power BI</span>
+          </div>
+
+          <div class="project-card__body">
+            <div class="project-card__header">
+              <h3 class="project-card__title">Customer Revenue and Retention Analysis</h3>
+              <span class="project-card__year">Solo Project · 2024</span>
+            </div>
+
+            <p class="project-card__summary">
+              Analysed 7,043 telecom customer records to identify churn risk. XGBoost with 15
+              engineered features hit 81% accuracy and ROC AUC 0.85 (cross-validated).
+              Estimated $120K annual retention uplift via simulation of targeted promotional
+              intervention, giving the commercial team a clear ROI case for action.
+            </p>
+
+            <div class="project-card__details">
+              <div class="detail">
+                <p class="detail__label">Key outcome</p>
+                <p class="detail__text">$120K uplift estimated via retention targeting simulation, 81% model accuracy, self-serve Power BI dashboard for stakeholders</p>
+              </div>
+              <div class="detail">
+                <p class="detail__label">Method</p>
+                <p class="detail__text">Python, SQL, XGBoost with stratified cross-validation, SHAP explainability, Power BI reporting</p>
+              </div>
+            </div>
+
+            <div class="project-card__stack">
+              <span class="tag tag--mono">Python</span>
+              <span class="tag tag--mono">SQL</span>
+              <span class="tag tag--mono">XGBoost</span>
+              <span class="tag tag--mono">SHAP</span>
+              <span class="tag tag--mono">Power BI</span>
+              <span class="tag tag--mono">Scikit-learn</span>
+            </div>
+
+            <div class="project-card__footer">
+              <a href="https://github.com/Shakya658/customer-churn" target="_blank" rel="noopener" class="project-link">
+                View on GitHub
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                  <path d="M2 10L10 2M4 2h6v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ── Project 2 ─────────────────────────────────── -->
+        <article class="project-card reveal reveal-delay-1" data-accent="violet">
+          <!--
+            PHOTO SLOT: assets/proj-retail.jpg
+            Good fit: Power BI dashboard, dbt lineage graph, or SQL output table
+            Recommended size: 800x350px
+          -->
+          <div class="project-card__thumb">
+            <img
+              src="assets/proj-retail.jpg"
+              alt="Retail analytics Power BI dashboard screenshot"
+              class="project-card__img"
+              onerror="this.closest('.project-card__thumb').classList.add('project-card__thumb--empty')"
+            />
+            <div class="project-card__thumb-placeholder">
+              <div class="thumb-icon">🗄️</div>
+              <p>Screenshot: <code>assets/proj-retail.jpg</code></p>
+            </div>
+            <span class="project-card__badge">SQL · dbt · Power BI</span>
+          </div>
+
+          <div class="project-card__body">
+            <div class="project-card__header">
+              <h3 class="project-card__title">Retail Operations and Sales Analytics Pipeline</h3>
+              <span class="project-card__year">Solo Project · 2024</span>
+            </div>
+
+            <p class="project-card__summary">
+              Transformed 1.6 million raw retail transactions across 9 relational tables into a
+              structured, automated reporting system delivering weekly and monthly performance views.
+              RFM segmentation found the top 12.3% of customers generate 21.1% of revenue, while
+              a large mid-tier segment (24.8%) contributed only 8.6%. Also flagged that the
+              highest-volume market had only 86.82% on-time delivery.
+            </p>
+
+            <div class="project-card__details">
+              <div class="detail">
+                <p class="detail__label">Scale</p>
+                <p class="detail__text">1.6M+ rows, 9 relational tables, full Bronze to Gold Medallion pipeline in Snowflake</p>
+              </div>
+              <div class="detail">
+                <p class="detail__label">Techniques</p>
+                <p class="detail__text">dbt models, CTEs, window functions, RFM segmentation, cohort retention analysis, Power BI dashboards</p>
+              </div>
+            </div>
+
+            <div class="project-card__stack">
+              <span class="tag tag--mono">SQL</span>
+              <span class="tag tag--mono">dbt</span>
+              <span class="tag tag--mono">Snowflake</span>
+              <span class="tag tag--mono">Power BI</span>
+              <span class="tag tag--mono">PostgreSQL</span>
+              <span class="tag tag--mono">RFM</span>
+            </div>
+
+            <div class="project-card__footer">
+              <a href="https://github.com/Shakya658/retail-sql-analytics" target="_blank" rel="noopener" class="project-link">
+                View on GitHub
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                  <path d="M2 10L10 2M4 2h6v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ── Project 3 ─────────────────────────────────── -->
+        <article class="project-card reveal reveal-delay-2" data-accent="green">
+          <!--
+            PHOTO SLOT: assets/proj-clinical.jpg
+            Good fit: SHAP beeswarm plot, ROC curve, or Streamlit clinical dashboard
+            Recommended size: 800x350px
+          -->
+          <div class="project-card__thumb">
+            <img
+              src="assets/proj-clinical.jpg"
+              alt="Clinical readmission risk SHAP explainability dashboard"
+              class="project-card__img"
+              onerror="this.closest('.project-card__thumb').classList.add('project-card__thumb--empty')"
+            />
+            <div class="project-card__thumb-placeholder">
+              <div class="thumb-icon">🏥</div>
+              <p>Screenshot: <code>assets/proj-clinical.jpg</code></p>
+            </div>
+            <span class="project-card__badge">XAI · Clinical · Python</span>
+          </div>
+
+          <div class="project-card__body">
+            <div class="project-card__header">
+              <h3 class="project-card__title">30-Day Hospital Readmission Risk</h3>
+              <span class="project-card__year">Solo Project · 2025</span>
+            </div>
+
+            <p class="project-card__summary">
+              Built and explained a clinical risk model on 101,766 patient records, engineering 96
+              features from raw EHR data. Used Bayesian tuning (Optuna, 50 trials) and stratified
+              5-fold cross-validation to handle class imbalance. Achieved ROC AUC 0.67, consistent
+              with published benchmarks for this task. The SHAP explainability dashboard was
+              designed specifically for non-technical clinical users.
+            </p>
+
+            <div class="project-card__details">
+              <div class="detail">
+                <p class="detail__label">Scale</p>
+                <p class="detail__text">101,766 patient records, 96 engineered features, stratified 5-fold CV</p>
+              </div>
+              <div class="detail">
+                <p class="detail__label">Result</p>
+                <p class="detail__text">ROC AUC 0.67, in line with published clinical benchmarks for 30-day readmission prediction</p>
+              </div>
+            </div>
+
+            <div class="project-card__stack">
+              <span class="tag tag--mono">Python</span>
+              <span class="tag tag--mono">SQL</span>
+              <span class="tag tag--mono">XGBoost</span>
+              <span class="tag tag--mono">SHAP</span>
+              <span class="tag tag--mono">Optuna</span>
+              <span class="tag tag--mono">Streamlit</span>
+            </div>
+
+            <div class="project-card__footer">
+              <a href="https://github.com/Shakya658/clinical-readmission-risk" target="_blank" rel="noopener" class="project-link">
+                View on GitHub
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                  <path d="M2 10L10 2M4 2h6v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ── Project 4 ─────────────────────────────────── -->
+        <article class="project-card reveal reveal-delay-3" data-accent="amber">
+          <!--
+            PHOTO SLOT: assets/proj-genomics.jpg
+            Good fit: UMAP cluster plot, heatmap, or capstone poster
+            Recommended size: 800x350px
+          -->
+          <div class="project-card__thumb">
+            <img
+              src="assets/proj-genomics.jpg"
+              alt="Cancer risk stratification UMAP cluster plot"
+              class="project-card__img"
+              onerror="this.closest('.project-card__thumb').classList.add('project-card__thumb--empty')"
+            />
+            <div class="project-card__thumb-placeholder">
+              <div class="thumb-icon">🧬</div>
+              <p>Screenshot: <code>assets/proj-genomics.jpg</code></p>
+            </div>
+            <span class="project-card__badge">UTS Capstone · High Distinction</span>
+          </div>
+
+          <div class="project-card__body">
+            <div class="project-card__header">
+              <h3 class="project-card__title">Cancer Risk Stratification via Multi-Omics</h3>
+              <span class="project-card__year">UTS Capstone · 2025</span>
+            </div>
+
+            <p class="project-card__summary">
+              Multi-omics analysis of 1,200 colorectal cancer patients integrating four
+              biological data types. Reduced dimensionality by 80% without losing clinical
+              signal, then identified 3 distinct patient risk subgroups. SHAP surfaced the
+              top 15 biomarkers per subgroup. Awarded High Distinction by UTS examiners.
+            </p>
+
+            <div class="project-card__details">
+              <div class="detail">
+                <p class="detail__label">Outcome</p>
+                <p class="detail__text">80% dimensionality reduction, 3 clinically meaningful risk subgroups, 15 biomarkers identified per group via SHAP</p>
+              </div>
+              <div class="detail">
+                <p class="detail__label">Grade</p>
+                <p class="detail__text">High Distinction, top academic performance, awarded by UTS examiners</p>
+              </div>
+            </div>
+
+            <div class="project-card__stack">
+              <span class="tag tag--mono">Python</span>
+              <span class="tag tag--mono">Scikit-learn</span>
+              <span class="tag tag--mono">SHAP</span>
+              <span class="tag tag--mono">Clustering</span>
+              <span class="tag tag--mono">PCA</span>
+              <span class="tag tag--mono">Multi-Omics</span>
+            </div>
+
+            <div class="project-card__footer">
+              <span class="project-link project-link--muted">
+                Private repo (UTS academic work)
+              </span>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /.projects__grid -->
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
+       SKILLS
+  ═══════════════════════════════════════════════ -->
+  <section id="skills" class="section">
+    <div class="section__inner">
+
+      <div class="section__header reveal">
+        <p class="section__tag">03 · Skills</p>
+        <h2 class="section__title">Technical Stack</h2>
+      </div>
+
+      <div class="skills__grid">
+
+        <div class="skill-group reveal">
+          <p class="skill-group__name">Data Analysis</p>
+          <div class="skill-group__pills">
+            <span class="pill">SQL</span>
+            <span class="pill">Python</span>
+            <span class="pill">Power BI</span>
+            <span class="pill">Tableau</span>
+            <span class="pill">Streamlit</span>
+            <span class="pill">RFM Segmentation</span>
+            <span class="pill">Cohort Analysis</span>
+            <span class="pill">A/B Testing</span>
+            <span class="pill">Variance Analysis</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal reveal-delay-1">
+          <p class="skill-group__name">Machine Learning</p>
+          <div class="skill-group__pills">
+            <span class="pill">Python</span>
+            <span class="pill">XGBoost</span>
+            <span class="pill">Scikit-learn</span>
+            <span class="pill">SHAP</span>
+            <span class="pill">Optuna</span>
+            <span class="pill">Pandas</span>
+            <span class="pill">NumPy</span>
+            <span class="pill">Predictive Modelling</span>
+            <span class="pill">Explainable AI</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal reveal-delay-2">
+          <p class="skill-group__name">Data Engineering</p>
+          <div class="skill-group__pills">
+            <span class="pill">dbt</span>
+            <span class="pill">Snowflake</span>
+            <span class="pill">BigQuery</span>
+            <span class="pill">PostgreSQL</span>
+            <span class="pill">GCP</span>
+            <span class="pill">Apache Airflow</span>
+            <span class="pill">ETL / ELT</span>
+            <span class="pill">Medallion Architecture</span>
+            <span class="pill">Git</span>
+          </div>
+        </div>
+
+      </div><!-- /.skills__grid -->
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
+       EXPERIENCE
+  ═══════════════════════════════════════════════ -->
+  <section id="experience" class="section">
+    <div class="section__inner">
+
+      <div class="section__header reveal">
+        <p class="section__tag">04 · Experience</p>
+        <h2 class="section__title">Work History</h2>
+      </div>
+
+      <div class="timeline">
+
+        <!-- ── Role 1 ──────────────────────────────────── -->
+        <div class="timeline__item reveal">
+          <div class="timeline__marker" aria-hidden="true">
+            <span class="timeline__dot"></span>
+            <span class="timeline__line"></span>
+          </div>
+          <div class="timeline__meta">
+            <p class="timeline__date">Aug 2022 to Jul 2024</p>
+            <p class="timeline__company">Invisible Technologies</p>
+            <p class="timeline__location">Remote (Contract)</p>
+          </div>
+          <div class="timeline__content">
+            <p class="timeline__role">Data Analyst</p>
+            <ul class="timeline__points">
+              <li>Built Python scripts to extract, validate and structure data from billing PDFs across multiple enterprise client workflows, removing manual processing entirely.</li>
+              <li>Transformed unstructured source records into clean outputs for automated compliance reporting on a sustainability analytics platform, replacing a fully manual reporting cycle.</li>
+              <li>Maintained data accuracy across high-volume, varied datasets through systematic validation and cross-checking before data reached reporting and compliance outputs.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ── Role 2 ──────────────────────────────────── -->
+        <div class="timeline__item reveal reveal-delay-1">
+          <div class="timeline__marker" aria-hidden="true">
+            <span class="timeline__dot"></span>
+            <span class="timeline__line"></span>
+          </div>
+          <div class="timeline__meta">
+            <p class="timeline__date">Jul 2023 to Present</p>
+            <p class="timeline__company">Coles Supermarkets</p>
+            <p class="timeline__location">Sydney, NSW</p>
+          </div>
+          <div class="timeline__content">
+            <p class="timeline__role">Night Fill Team Member</p>
+            <ul class="timeline__points">
+              <li>Maintained 20 hours of paid work per week throughout full-time Masters study, managing competing priorities consistently across two years.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ── Role 3 ──────────────────────────────────── -->
+        <div class="timeline__item reveal reveal-delay-2">
+          <div class="timeline__marker" aria-hidden="true">
+            <span class="timeline__dot"></span>
+          </div>
+          <div class="timeline__meta">
+            <p class="timeline__date">Mar 2020 to Aug 2022</p>
+            <p class="timeline__company">Tripura Secondary School</p>
+            <p class="timeline__location">Kathmandu, Nepal</p>
+          </div>
+          <div class="timeline__content">
+            <p class="timeline__role">IT Systems and Data Supervisor</p>
+            <ul class="timeline__points">
+              <li>Designed and deployed school-wide relational databases and reporting systems from scratch, improving operational efficiency by around 25%.</li>
+              <li>Led a full migration to remote infrastructure during COVID-19 for 50+ students and staff with zero disruption to operations.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div><!-- /.timeline -->
+
+      <!-- Education subsection -->
+      <div class="section__subheader reveal">
+        <p class="section__tag">Education</p>
+      </div>
+
+      <div class="edu__list">
+
+        <div class="edu-card reveal">
+          <div class="edu-card__left">
+            <p class="edu-card__degree">Master of Data Science and Innovation</p>
+            <p class="edu-card__school">University of Technology Sydney (UTS)</p>
+          </div>
+          <div class="edu-card__right">
+            <p class="edu-card__date">Jun 2023 – Jun 2025</p>
+            <span class="edu-card__badge">GPA 6.09 / 7.0 · Academic Excellence Scholarship</span>
+          </div>
+        </div>
+
+        <div class="edu-card reveal reveal-delay-1">
+          <div class="edu-card__left">
+            <p class="edu-card__degree">Professional Year Program, Information Technology</p>
+            <p class="edu-card__school">QIBA · Sydney, NSW</p>
+          </div>
+          <div class="edu-card__right">
+            <p class="edu-card__date">Jan 2026 – Present</p>
+            <span class="edu-card__badge edu-card__badge--active">In Progress</span>
+          </div>
+        </div>
+
+        <div class="edu-card reveal reveal-delay-2">
+          <div class="edu-card__left">
+            <p class="edu-card__degree">Bachelor of Engineering, Computer Science</p>
+            <p class="edu-card__school">Nitte Meenakshi Institute of Technology · India</p>
+          </div>
+          <div class="edu-card__right">
+            <p class="edu-card__date">Jun 2017 – Jun 2021</p>
+          </div>
+        </div>
+
+      </div><!-- /.edu__list -->
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
+       CONTACT
+  ═══════════════════════════════════════════════ -->
+  <section id="contact" class="section section--last">
+    <div class="section__inner">
+
+      <div class="section__header reveal">
+        <p class="section__tag">05 · Contact</p>
+        <h2 class="section__title">Get in Touch</h2>
+      </div>
+
+      <div class="contact__grid">
+        <div class="contact__text reveal">
+          <p>
+            I'm actively looking for junior Data Analyst, Business Analyst, or ML Engineer roles
+            in Sydney. If you have an opportunity or just want to talk data, my inbox is always open.
+          </p>
+          <p>
+            I typically reply within 24 hours.
+          </p>
+          <button class="btn btn--primary contact__resume-btn" onclick="downloadResume()">
+            Download Resume (HTML)
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M7 1v9M4 7l3 3 3-3M1 12h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+
+        <div class="contact__links reveal reveal-delay-2">
+          <a href="mailto:shirishshakya4@gmail.com" class="contact-link">
+            <span class="contact-link__icon">✉️</span>
+            <span class="contact-link__label">Email</span>
+            <span class="contact-link__value">shirishshakya4@gmail.com</span>
+          </a>
+          <a href="https://linkedin.com/in/shirish-man-shakya" target="_blank" rel="noopener" class="contact-link">
+            <span class="contact-link__icon">🔗</span>
+            <span class="contact-link__label">LinkedIn</span>
+            <span class="contact-link__value">shirish-man-shakya</span>
+          </a>
+          <a href="https://github.com/Shakya658" target="_blank" rel="noopener" class="contact-link">
+            <span class="contact-link__icon">💻</span>
+            <span class="contact-link__label">GitHub</span>
+            <span class="contact-link__value">Shakya658</span>
+          </a>
+          <a href="tel:0492877385" class="contact-link">
+            <span class="contact-link__icon">📞</span>
+            <span class="contact-link__label">Phone</span>
+            <span class="contact-link__value">0492 877 385</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <p class="footer__name">Shirish Man Shakya</p>
+      <p class="footer__copy">© 2025 · Built with HTML &amp; CSS · Sydney, NSW</p>
+    </div>
+  </footer>
+
+
+  <!-- ═══════════════════════════════════════════════
+       SCRIPTS
+  ═══════════════════════════════════════════════ -->
+  <script src="assets/main.js"></script>
 
 </body>
 </html>
