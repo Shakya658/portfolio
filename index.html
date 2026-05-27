@@ -3,22 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Shirish Man Shakya, Data Analyst and ML Engineer based in Sydney, NSW. Master of Data Science from UTS." />
+  <meta name="description" content="Shirish Man Shakya — Data Analyst and ML Engineer based in Sydney, NSW. UTS Master of Data Science graduate." />
+  <meta name="theme-color" content="#080808" />
   <title>Shirish Man Shakya | Data Analyst &amp; ML Engineer</title>
 
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@200;300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
 
-  <!-- Stylesheet -->
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
 
-  <!-- ═══════════════════════════════════════════════
-       AMBIENT BACKGROUND CANVAS (pure CSS blobs)
-  ═══════════════════════════════════════════════ -->
+  <!-- AMBIENT BACKGROUND -->
   <div class="ambient" aria-hidden="true">
     <div class="ambient__blob ambient__blob--1"></div>
     <div class="ambient__blob ambient__blob--2"></div>
@@ -26,41 +23,43 @@
     <div class="ambient__grid"></div>
   </div>
 
-  <!-- ═══════════════════════════════════════════════
-       NAV
-  ═══════════════════════════════════════════════ -->
-  <nav id="nav">
+  <!-- NAV -->
+  <nav id="nav" aria-label="Primary navigation">
     <div class="nav__inner">
-      <a href="#hero" class="nav__logo">
-        SMS<span class="nav__logo-dot">.</span>
+      <a href="#hero" class="nav__logo" aria-label="Shirish Man Shakya — home">
+        SMS<span class="nav__logo-dot" aria-hidden="true">.</span>
       </a>
-      <ul class="nav__links">
+
+      <button class="nav__hamburger" id="navHamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav__links" id="navLinks" role="list">
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <button class="nav__resume-btn" onclick="downloadResume()">
+
+      <button class="nav__resume-btn" onclick="downloadResume()" aria-label="Download resume as HTML file">
         <span>Resume</span>
-        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true" focusable="false">
           <path d="M6 1v7M3 5l3 3 3-3M1 10h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
       </button>
     </div>
   </nav>
 
-  <!-- ═══════════════════════════════════════════════
-       HERO
-  ═══════════════════════════════════════════════ -->
-  <section id="hero" class="hero">
+  <!-- HERO -->
+  <section id="hero" class="hero" aria-label="Introduction">
     <div class="hero__inner">
 
-      <!-- Left column: text -->
+      <!-- Text column -->
       <div class="hero__text">
-        <div class="hero__available">
-          <span class="hero__dot"></span>
-          Open to opportunities · Sydney, NSW
+        <div class="hero__available" role="status">
+          <span class="hero__dot" aria-hidden="true"></span>
+          Open to opportunities &middot; Sydney, NSW
         </div>
 
         <p class="hero__eyebrow">Data Analyst &amp; ML Engineer</p>
@@ -71,33 +70,31 @@
         </h1>
 
         <p class="hero__desc">
-          UTS Master of Data Science graduate (GPA 6.09/7, Academic Excellence Scholarship).
-          I turn raw data into business decisions using SQL, Python, ML models and Power BI.
+          UTS Master of Data Science graduate (GPA&nbsp;6.09/7, Academic Excellence Scholarship).
+          I turn raw data into business decisions using SQL, Python, ML&nbsp;models and Power&nbsp;BI.
         </p>
 
-        <!-- Stats row -->
-        <div class="hero__stats">
+        <dl class="hero__stats" aria-label="Key achievements">
           <div class="hero__stat">
-            <span class="hero__stat-value">4</span>
-            <span class="hero__stat-label">End-to-end projects</span>
+            <dt class="hero__stat-label">End-to-end projects</dt>
+            <dd class="hero__stat-value">4</dd>
           </div>
-          <div class="hero__stat-sep"></div>
+          <div class="hero__stat-sep" aria-hidden="true"></div>
           <div class="hero__stat">
-            <span class="hero__stat-value">$120K</span>
-            <span class="hero__stat-label">Retention uplift modelled</span>
+            <dt class="hero__stat-label">Retention uplift modelled</dt>
+            <dd class="hero__stat-value">$120K</dd>
           </div>
-          <div class="hero__stat-sep"></div>
+          <div class="hero__stat-sep" aria-hidden="true"></div>
           <div class="hero__stat">
-            <span class="hero__stat-value">HD</span>
-            <span class="hero__stat-label">Capstone distinction</span>
+            <dt class="hero__stat-label">Capstone grade</dt>
+            <dd class="hero__stat-value">HD</dd>
           </div>
-        </div>
+        </dl>
 
-        <!-- CTA buttons -->
         <div class="hero__ctas">
           <a href="#projects" class="btn btn--primary">
             View Projects
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true" focusable="false">
               <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </a>
@@ -105,25 +102,19 @@
         </div>
       </div>
 
-      <!-- Right column: portrait placeholder + floating cards -->
-      <div class="hero__visual">
-
-        <!--
-          ╔══════════════════════════════════════════════╗
-          ║  PHOTO SLOT                                  ║
-          ║  Replace src with your actual photo URL or   ║
-          ║  a relative path like: assets/photo.jpg      ║
-          ╚══════════════════════════════════════════════╝
-        -->
-        <div class="hero__portrait-wrap">
+      <!-- Visual column -->
+      <div class="hero__visual" aria-hidden="true">
+        <div class="hero__portrait-wrap" id="heroPortrait">
           <img
             src="assets/photo.jpg"
             alt="Portrait of Shirish Man Shakya"
             class="hero__portrait"
-            onerror="this.closest('.hero__portrait-wrap').classList.add('hero__portrait-wrap--fallback')"
+            width="260"
+            height="260"
+            loading="eager"
+            onerror="document.getElementById('heroPortrait').classList.add('hero__portrait-wrap--fallback')"
           />
-          <!-- Shown when image fails to load -->
-          <div class="hero__portrait-fallback" aria-hidden="true">
+          <div class="hero__portrait-fallback">
             <span class="hero__portrait-initials">SMS</span>
             <p class="hero__portrait-hint">
               Add your photo at<br />
@@ -133,11 +124,10 @@
           <div class="hero__portrait-ring"></div>
         </div>
 
-        <!-- Floating metric cards -->
         <div class="hero__card hero__card--auc">
-          <span class="hero__card-label">Best ROC AUC</span>
+          <span class="hero__card-label">Best ROC&nbsp;AUC</span>
           <span class="hero__card-value">0.85</span>
-          <span class="hero__card-sub">Churn model · XGBoost</span>
+          <span class="hero__card-sub">Churn model &middot; XGBoost</span>
         </div>
 
         <div class="hero__card hero__card--gpa">
@@ -151,86 +141,77 @@
           <span class="hero__card-value">1.6M<span class="hero__card-denom">+</span></span>
           <span class="hero__card-sub">Retail analytics pipeline</span>
         </div>
+      </div>
+    </div>
 
-      </div><!-- /.hero__visual -->
-    </div><!-- /.hero__inner -->
-
-    <!-- scroll indicator -->
     <div class="hero__scroll" aria-hidden="true">
       <div class="hero__scroll-line"></div>
     </div>
   </section>
 
 
-  <!-- ═══════════════════════════════════════════════
-       ABOUT
-  ═══════════════════════════════════════════════ -->
-  <section id="about" class="section">
+  <!-- ABOUT -->
+  <section id="about" class="section" aria-labelledby="about-title">
     <div class="section__inner">
 
-      <div class="section__header reveal">
-        <p class="section__tag">01 · About</p>
-        <h2 class="section__title">Background</h2>
-      </div>
+      <header class="section__header reveal">
+        <p class="section__tag">01 &middot; About</p>
+        <h2 class="section__title" id="about-title">Background</h2>
+      </header>
 
       <div class="about__grid">
         <div class="about__text reveal">
           <p>
             I'm a data analyst who gets genuinely excited about messy datasets. Most of my project work
-            sits somewhere between SQL pipeline engineering and ML modelling, with a lot of Power BI and
-            stakeholder communication in between. I like problems where the answer actually changes what
-            a team does next.
+            sits somewhere between SQL pipeline engineering and ML modelling, with a lot of Power&nbsp;BI
+            and stakeholder communication in between. I like problems where the answer actually changes
+            what a team does next.
           </p>
           <p>
             Before Sydney I ran IT systems and databases for a school in Kathmandu, including a full
-            remote migration during COVID-19 for 50+ staff and students. That role made me care a lot
-            about data reliability and clear reporting, not just clever analysis. I'm an ACS member,
+            remote migration during COVID-19 for 50+&nbsp;staff and students. That role made me care a lot
+            about data reliability and clear reporting — not just clever analysis. I'm an ACS member,
             currently in my Professional Year and actively looking for junior DA, BA or ML roles.
           </p>
 
-          <!--
-            ╔══════════════════════════════════════════════╗
-            ║  ABOUT PHOTO SLOT                            ║
-            ║  A second, more relaxed photo works well     ║
-            ║  here — e.g. at a desk, whiteboard, or café  ║
-            ║  Replace src: assets/about-photo.jpg         ║
-            ╚══════════════════════════════════════════════╝
-          -->
           <div class="about__photo-wrap reveal reveal-delay-2">
             <img
               src="assets/about-photo.jpg"
               alt="Shirish at work"
               class="about__photo"
+              width="800"
+              height="600"
+              loading="lazy"
               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"
             />
-            <div class="about__photo-placeholder">
+            <div class="about__photo-placeholder" aria-hidden="true">
               <span>📸</span>
               <p>Casual photo<br /><code>assets/about-photo.jpg</code></p>
             </div>
           </div>
         </div>
 
-        <div class="about__sidebar reveal reveal-delay-2">
-          <ul class="meta-list">
+        <aside class="about__sidebar reveal reveal-delay-2">
+          <ul class="meta-list" role="list">
             <li class="meta-item">
-              <span class="meta-icon">📍</span>
-              <span>Sydney, NSW 2099</span>
+              <span class="meta-icon" aria-hidden="true">📍</span>
+              <span>Sydney, NSW 2000</span>
             </li>
             <li class="meta-item">
-              <span class="meta-icon">🎓</span>
+              <span class="meta-icon" aria-hidden="true">🎓</span>
               <span>UTS Master of Data Science</span>
             </li>
             <li class="meta-item">
-              <span class="meta-icon">💼</span>
+              <span class="meta-icon" aria-hidden="true">💼</span>
               <span>Open to junior DA / BA / ML roles</span>
             </li>
             <li class="meta-item">
-              <span class="meta-icon">🤝</span>
+              <span class="meta-icon" aria-hidden="true">🤝</span>
               <span>ACS Member</span>
             </li>
             <li class="meta-item">
-              <span class="meta-icon">🌏</span>
-              <span>Work rights · Full Working Rights</span>
+              <span class="meta-icon" aria-hidden="true">🌏</span>
+              <span>Full working rights</span>
             </li>
           </ul>
 
@@ -243,58 +224,54 @@
               <span class="tag">MicroStrategy</span>
             </div>
           </div>
-        </div>
+        </aside>
       </div>
     </div>
   </section>
 
 
-  <!-- ═══════════════════════════════════════════════
-       PROJECTS
-  ═══════════════════════════════════════════════ -->
-  <section id="projects" class="section">
+  <!-- PROJECTS -->
+  <section id="projects" class="section" aria-labelledby="projects-title">
     <div class="section__inner">
 
-      <div class="section__header reveal">
-        <p class="section__tag">02 · Featured Projects (Selected Impact Work)</p>
-        <h2 class="section__title">Selected Work</h2>
-        <p class="section__subtitle">Four personal projects across retail ops, customer retention, clinical AI and cancer genomics. All solo work.</p>
-      </div>
+      <header class="section__header reveal">
+        <p class="section__tag">02 &middot; Featured Projects</p>
+        <h2 class="section__title" id="projects-title">Selected Work</h2>
+        <p class="section__subtitle">Four end-to-end projects across retail ops, customer retention, clinical AI, and cancer genomics. All solo work.</p>
+      </header>
 
       <div class="projects__grid">
 
-        <!-- ── Project 1 ─────────────────────────────────── -->
+        <!-- Project 1 -->
         <article class="project-card reveal" data-accent="blue">
-          <!--
-            PHOTO SLOT: assets/proj-churn.jpg
-            Good fit: Power BI dashboard, ROC curve, or SHAP beeswarm plot
-            Recommended size: 800x350px
-          -->
           <div class="project-card__thumb">
             <img
               src="assets/proj-churn.jpg"
               alt="Customer churn Power BI dashboard screenshot"
               class="project-card__img"
+              width="800"
+              height="350"
+              loading="lazy"
               onerror="this.closest('.project-card__thumb').classList.add('project-card__thumb--empty')"
             />
-            <div class="project-card__thumb-placeholder">
+            <div class="project-card__thumb-placeholder" aria-hidden="true">
               <div class="thumb-icon">📊</div>
               <p>Screenshot: <code>assets/proj-churn.jpg</code></p>
             </div>
-            <span class="project-card__badge">ML · Python · Power BI</span>
+            <span class="project-card__badge">ML &middot; Python &middot; Power BI</span>
           </div>
 
           <div class="project-card__body">
             <div class="project-card__header">
-              <h3 class="project-card__title">Customer Revenue and Retention Analysis</h3>
-              <span class="project-card__year">Solo Project · 2024</span>
+              <h3 class="project-card__title">Customer Revenue &amp; Retention Analysis</h3>
+              <span class="project-card__year">Solo &middot; 2024</span>
             </div>
 
             <p class="project-card__summary">
               Analysed 7,043 telecom customer records to identify churn risk. XGBoost with 15
-              engineered features hit 81% accuracy and ROC AUC 0.85 (cross-validated).
-              Estimated $120K annual retention uplift via simulation of targeted promotional
-              intervention, giving the commercial team a clear ROI case for action.
+              engineered features hit 81% accuracy and ROC&nbsp;AUC 0.85 (cross-validated).
+              Estimated $120K annual retention uplift via targeted promotion simulation —
+              giving the commercial team a clear ROI case for action.
             </p>
 
             <div class="project-card__details">
@@ -308,19 +285,19 @@
               </div>
             </div>
 
-            <div class="project-card__stack">
-              <span class="tag tag--mono">Python</span>
-              <span class="tag tag--mono">SQL</span>
-              <span class="tag tag--mono">XGBoost</span>
-              <span class="tag tag--mono">SHAP</span>
-              <span class="tag tag--mono">Power BI</span>
-              <span class="tag tag--mono">Scikit-learn</span>
-            </div>
+            <ul class="project-card__stack" role="list" aria-label="Technologies used">
+              <li><span class="tag tag--mono">Python</span></li>
+              <li><span class="tag tag--mono">SQL</span></li>
+              <li><span class="tag tag--mono">XGBoost</span></li>
+              <li><span class="tag tag--mono">SHAP</span></li>
+              <li><span class="tag tag--mono">Power BI</span></li>
+              <li><span class="tag tag--mono">Scikit-learn</span></li>
+            </ul>
 
             <div class="project-card__footer">
-              <a href="https://github.com/Shakya658/customer-churn" target="_blank" rel="noopener" class="project-link">
+              <a href="https://github.com/Shakya658/customer-churn" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Customer Churn project on GitHub (opens in new tab)">
                 View on GitHub
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true" focusable="false">
                   <path d="M2 10L10 2M4 2h6v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </a>
@@ -328,45 +305,42 @@
           </div>
         </article>
 
-        <!-- ── Project 2 ─────────────────────────────────── -->
+        <!-- Project 2 -->
         <article class="project-card reveal reveal-delay-1" data-accent="violet">
-          <!--
-            PHOTO SLOT: assets/proj-retail.jpg
-            Good fit: Power BI dashboard, dbt lineage graph, or SQL output table
-            Recommended size: 800x350px
-          -->
           <div class="project-card__thumb">
             <img
               src="assets/proj-retail.jpg"
               alt="Retail analytics Power BI dashboard screenshot"
               class="project-card__img"
+              width="800"
+              height="350"
+              loading="lazy"
               onerror="this.closest('.project-card__thumb').classList.add('project-card__thumb--empty')"
             />
-            <div class="project-card__thumb-placeholder">
+            <div class="project-card__thumb-placeholder" aria-hidden="true">
               <div class="thumb-icon">🗄️</div>
               <p>Screenshot: <code>assets/proj-retail.jpg</code></p>
             </div>
-            <span class="project-card__badge">SQL · dbt · Power BI</span>
+            <span class="project-card__badge">SQL &middot; dbt &middot; Power BI</span>
           </div>
 
           <div class="project-card__body">
             <div class="project-card__header">
-              <h3 class="project-card__title">Retail Operations and Sales Analytics Pipeline</h3>
-              <span class="project-card__year">Solo Project · 2024</span>
+              <h3 class="project-card__title">Retail Operations &amp; Sales Analytics Pipeline</h3>
+              <span class="project-card__year">Solo &middot; 2024</span>
             </div>
 
             <p class="project-card__summary">
-              Transformed 1.6 million raw retail transactions across 9 relational tables into a
-              structured, automated reporting system delivering weekly and monthly performance views.
-              RFM segmentation found the top 12.3% of customers generate 21.1% of revenue, while
-              a large mid-tier segment (24.8%) contributed only 8.6%. Also flagged that the
-              highest-volume market had only 86.82% on-time delivery.
+              Transformed 1.6&nbsp;million raw retail transactions across 9 relational tables into a
+              structured, automated reporting system. RFM segmentation found the top 12.3% of customers
+              generate 21.1% of revenue, while a large mid-tier segment (24.8%) contributed only 8.6%.
+              Also flagged the highest-volume market had only 86.82% on-time delivery.
             </p>
 
             <div class="project-card__details">
               <div class="detail">
                 <p class="detail__label">Scale</p>
-                <p class="detail__text">1.6M+ rows, 9 relational tables, full Bronze to Gold Medallion pipeline in Snowflake</p>
+                <p class="detail__text">1.6M+ rows, 9 relational tables, full Bronze → Gold Medallion pipeline in Snowflake</p>
               </div>
               <div class="detail">
                 <p class="detail__label">Techniques</p>
@@ -374,19 +348,19 @@
               </div>
             </div>
 
-            <div class="project-card__stack">
-              <span class="tag tag--mono">SQL</span>
-              <span class="tag tag--mono">dbt</span>
-              <span class="tag tag--mono">Snowflake</span>
-              <span class="tag tag--mono">Power BI</span>
-              <span class="tag tag--mono">PostgreSQL</span>
-              <span class="tag tag--mono">RFM</span>
-            </div>
+            <ul class="project-card__stack" role="list" aria-label="Technologies used">
+              <li><span class="tag tag--mono">SQL</span></li>
+              <li><span class="tag tag--mono">dbt</span></li>
+              <li><span class="tag tag--mono">Snowflake</span></li>
+              <li><span class="tag tag--mono">Power BI</span></li>
+              <li><span class="tag tag--mono">PostgreSQL</span></li>
+              <li><span class="tag tag--mono">RFM</span></li>
+            </ul>
 
             <div class="project-card__footer">
-              <a href="https://github.com/Shakya658/retail-sql-analytics" target="_blank" rel="noopener" class="project-link">
+              <a href="https://github.com/Shakya658/retail-sql-analytics" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Retail Analytics project on GitHub (opens in new tab)">
                 View on GitHub
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true" focusable="false">
                   <path d="M2 10L10 2M4 2h6v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </a>
@@ -394,39 +368,37 @@
           </div>
         </article>
 
-        <!-- ── Project 3 ─────────────────────────────────── -->
+        <!-- Project 3 -->
         <article class="project-card reveal reveal-delay-2" data-accent="green">
-          <!--
-            PHOTO SLOT: assets/proj-clinical.jpg
-            Good fit: SHAP beeswarm plot, ROC curve, or Streamlit clinical dashboard
-            Recommended size: 800x350px
-          -->
           <div class="project-card__thumb">
             <img
               src="assets/proj-clinical.jpg"
               alt="Clinical readmission risk SHAP explainability dashboard"
               class="project-card__img"
+              width="800"
+              height="350"
+              loading="lazy"
               onerror="this.closest('.project-card__thumb').classList.add('project-card__thumb--empty')"
             />
-            <div class="project-card__thumb-placeholder">
+            <div class="project-card__thumb-placeholder" aria-hidden="true">
               <div class="thumb-icon">🏥</div>
               <p>Screenshot: <code>assets/proj-clinical.jpg</code></p>
             </div>
-            <span class="project-card__badge">XAI · Clinical · Python</span>
+            <span class="project-card__badge">XAI &middot; Clinical &middot; Python</span>
           </div>
 
           <div class="project-card__body">
             <div class="project-card__header">
               <h3 class="project-card__title">30-Day Hospital Readmission Risk</h3>
-              <span class="project-card__year">Solo Project · 2025</span>
+              <span class="project-card__year">Solo &middot; 2025</span>
             </div>
 
             <p class="project-card__summary">
               Built and explained a clinical risk model on 101,766 patient records, engineering 96
-              features from raw EHR data. Used Bayesian tuning (Optuna, 50 trials) and stratified
-              5-fold cross-validation to handle class imbalance. Achieved ROC AUC 0.67, consistent
-              with published benchmarks for this task. The SHAP explainability dashboard was
-              designed specifically for non-technical clinical users.
+              features from raw EHR data. Used Bayesian tuning (Optuna, 50&nbsp;trials) and stratified
+              5-fold cross-validation to handle class imbalance. Achieved ROC&nbsp;AUC&nbsp;0.67 — consistent
+              with published benchmarks. SHAP explainability dashboard designed for non-technical
+              clinical users.
             </p>
 
             <div class="project-card__details">
@@ -440,19 +412,19 @@
               </div>
             </div>
 
-            <div class="project-card__stack">
-              <span class="tag tag--mono">Python</span>
-              <span class="tag tag--mono">SQL</span>
-              <span class="tag tag--mono">XGBoost</span>
-              <span class="tag tag--mono">SHAP</span>
-              <span class="tag tag--mono">Optuna</span>
-              <span class="tag tag--mono">Streamlit</span>
-            </div>
+            <ul class="project-card__stack" role="list" aria-label="Technologies used">
+              <li><span class="tag tag--mono">Python</span></li>
+              <li><span class="tag tag--mono">SQL</span></li>
+              <li><span class="tag tag--mono">XGBoost</span></li>
+              <li><span class="tag tag--mono">SHAP</span></li>
+              <li><span class="tag tag--mono">Optuna</span></li>
+              <li><span class="tag tag--mono">Streamlit</span></li>
+            </ul>
 
             <div class="project-card__footer">
-              <a href="https://github.com/Shakya658/clinical-readmission-risk" target="_blank" rel="noopener" class="project-link">
+              <a href="https://github.com/Shakya658/clinical-readmission-risk" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Clinical Readmission project on GitHub (opens in new tab)">
                 View on GitHub
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true" focusable="false">
                   <path d="M2 10L10 2M4 2h6v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </a>
@@ -460,38 +432,36 @@
           </div>
         </article>
 
-        <!-- ── Project 4 ─────────────────────────────────── -->
+        <!-- Project 4 -->
         <article class="project-card reveal reveal-delay-3" data-accent="amber">
-          <!--
-            PHOTO SLOT: assets/proj-genomics.jpg
-            Good fit: UMAP cluster plot, heatmap, or capstone poster
-            Recommended size: 800x350px
-          -->
           <div class="project-card__thumb">
             <img
               src="assets/proj-genomics.jpg"
               alt="Cancer risk stratification UMAP cluster plot"
               class="project-card__img"
+              width="800"
+              height="350"
+              loading="lazy"
               onerror="this.closest('.project-card__thumb').classList.add('project-card__thumb--empty')"
             />
-            <div class="project-card__thumb-placeholder">
+            <div class="project-card__thumb-placeholder" aria-hidden="true">
               <div class="thumb-icon">🧬</div>
               <p>Screenshot: <code>assets/proj-genomics.jpg</code></p>
             </div>
-            <span class="project-card__badge">UTS Capstone · High Distinction</span>
+            <span class="project-card__badge">UTS Capstone &middot; High Distinction</span>
           </div>
 
           <div class="project-card__body">
             <div class="project-card__header">
               <h3 class="project-card__title">Cancer Risk Stratification via Multi-Omics</h3>
-              <span class="project-card__year">UTS Capstone · 2025</span>
+              <span class="project-card__year">UTS Capstone &middot; 2025</span>
             </div>
 
             <p class="project-card__summary">
-              Multi-omics analysis of 1,200 colorectal cancer patients integrating four
-              biological data types. Reduced dimensionality by 80% without losing clinical
-              signal, then identified 3 distinct patient risk subgroups. SHAP surfaced the
-              top 15 biomarkers per subgroup. Awarded High Distinction by UTS examiners.
+              Multi-omics analysis of 1,200 colorectal cancer patients integrating four biological
+              data types. Reduced dimensionality by 80% without losing clinical signal, then identified
+              3 distinct patient risk subgroups. SHAP surfaced the top 15 biomarkers per subgroup.
+              Awarded High Distinction by UTS examiners.
             </p>
 
             <div class="project-card__details">
@@ -501,116 +471,116 @@
               </div>
               <div class="detail">
                 <p class="detail__label">Grade</p>
-                <p class="detail__text">High Distinction, top academic performance, awarded by UTS examiners</p>
+                <p class="detail__text">High Distinction — top academic performance, awarded by UTS examiners</p>
               </div>
             </div>
 
-            <div class="project-card__stack">
-              <span class="tag tag--mono">Python</span>
-              <span class="tag tag--mono">Scikit-learn</span>
-              <span class="tag tag--mono">SHAP</span>
-              <span class="tag tag--mono">Clustering</span>
-              <span class="tag tag--mono">PCA</span>
-              <span class="tag tag--mono">Multi-Omics</span>
-            </div>
+            <ul class="project-card__stack" role="list" aria-label="Technologies used">
+              <li><span class="tag tag--mono">Python</span></li>
+              <li><span class="tag tag--mono">Scikit-learn</span></li>
+              <li><span class="tag tag--mono">SHAP</span></li>
+              <li><span class="tag tag--mono">Clustering</span></li>
+              <li><span class="tag tag--mono">PCA</span></li>
+              <li><span class="tag tag--mono">Multi-Omics</span></li>
+            </ul>
 
             <div class="project-card__footer">
-              <span class="project-link project-link--muted">
+              <span class="project-link project-link--muted" aria-label="Repository is private — academic work">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true" focusable="false">
+                  <rect x="2" y="5" width="8" height="6" rx="1" stroke="currentColor" stroke-width="1.4"/>
+                  <path d="M4 5V3.5a2 2 0 0 1 4 0V5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+                </svg>
                 Private repo (UTS academic work)
               </span>
             </div>
           </div>
         </article>
 
-      </div><!-- /.projects__grid -->
+      </div>
     </div>
   </section>
 
 
-  <!-- ═══════════════════════════════════════════════
-       SKILLS
-  ═══════════════════════════════════════════════ -->
-  <section id="skills" class="section">
+  <!-- SKILLS -->
+  <section id="skills" class="section" aria-labelledby="skills-title">
     <div class="section__inner">
 
-      <div class="section__header reveal">
-        <p class="section__tag">03 · Skills</p>
-        <h2 class="section__title">Technical Stack</h2>
-      </div>
+      <header class="section__header reveal">
+        <p class="section__tag">03 &middot; Skills</p>
+        <h2 class="section__title" id="skills-title">Technical Stack</h2>
+      </header>
 
       <div class="skills__grid">
 
         <div class="skill-group reveal">
-          <p class="skill-group__name">Data Analysis</p>
-          <div class="skill-group__pills">
-            <span class="pill">SQL</span>
-            <span class="pill">Python</span>
-            <span class="pill">Power BI</span>
-            <span class="pill">Tableau</span>
-            <span class="pill">Streamlit</span>
-            <span class="pill">RFM Segmentation</span>
-            <span class="pill">Cohort Analysis</span>
-            <span class="pill">A/B Testing</span>
-            <span class="pill">Variance Analysis</span>
-          </div>
+          <p class="skill-group__name" id="skills-analysis">Data Analysis</p>
+          <ul class="skill-group__pills" role="list" aria-labelledby="skills-analysis">
+            <li><span class="pill">SQL</span></li>
+            <li><span class="pill">Python</span></li>
+            <li><span class="pill">Power BI</span></li>
+            <li><span class="pill">Tableau</span></li>
+            <li><span class="pill">Streamlit</span></li>
+            <li><span class="pill">RFM Segmentation</span></li>
+            <li><span class="pill">Cohort Analysis</span></li>
+            <li><span class="pill">A/B Testing</span></li>
+            <li><span class="pill">Variance Analysis</span></li>
+          </ul>
         </div>
 
         <div class="skill-group reveal reveal-delay-1">
-          <p class="skill-group__name">Machine Learning</p>
-          <div class="skill-group__pills">
-            <span class="pill">Python</span>
-            <span class="pill">XGBoost</span>
-            <span class="pill">Scikit-learn</span>
-            <span class="pill">SHAP</span>
-            <span class="pill">Optuna</span>
-            <span class="pill">Pandas</span>
-            <span class="pill">NumPy</span>
-            <span class="pill">Predictive Modelling</span>
-            <span class="pill">Explainable AI</span>
-          </div>
+          <p class="skill-group__name" id="skills-ml">Machine Learning</p>
+          <ul class="skill-group__pills" role="list" aria-labelledby="skills-ml">
+            <li><span class="pill">Python</span></li>
+            <li><span class="pill">XGBoost</span></li>
+            <li><span class="pill">Scikit-learn</span></li>
+            <li><span class="pill">SHAP</span></li>
+            <li><span class="pill">Optuna</span></li>
+            <li><span class="pill">Pandas</span></li>
+            <li><span class="pill">NumPy</span></li>
+            <li><span class="pill">Predictive Modelling</span></li>
+            <li><span class="pill">Explainable AI</span></li>
+          </ul>
         </div>
 
         <div class="skill-group reveal reveal-delay-2">
-          <p class="skill-group__name">Data Engineering</p>
-          <div class="skill-group__pills">
-            <span class="pill">dbt</span>
-            <span class="pill">Snowflake</span>
-            <span class="pill">BigQuery</span>
-            <span class="pill">PostgreSQL</span>
-            <span class="pill">GCP</span>
-            <span class="pill">Apache Airflow</span>
-            <span class="pill">ETL / ELT</span>
-            <span class="pill">Medallion Architecture</span>
-            <span class="pill">Git</span>
-          </div>
+          <p class="skill-group__name" id="skills-eng">Data Engineering</p>
+          <ul class="skill-group__pills" role="list" aria-labelledby="skills-eng">
+            <li><span class="pill">dbt</span></li>
+            <li><span class="pill">Snowflake</span></li>
+            <li><span class="pill">BigQuery</span></li>
+            <li><span class="pill">PostgreSQL</span></li>
+            <li><span class="pill">GCP</span></li>
+            <li><span class="pill">Apache Airflow</span></li>
+            <li><span class="pill">ETL / ELT</span></li>
+            <li><span class="pill">Medallion Architecture</span></li>
+            <li><span class="pill">Git</span></li>
+          </ul>
         </div>
 
-      </div><!-- /.skills__grid -->
+      </div>
     </div>
   </section>
 
 
-  <!-- ═══════════════════════════════════════════════
-       EXPERIENCE
-  ═══════════════════════════════════════════════ -->
-  <section id="experience" class="section">
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section" aria-labelledby="experience-title">
     <div class="section__inner">
 
-      <div class="section__header reveal">
-        <p class="section__tag">04 · Experience</p>
-        <h2 class="section__title">Work History</h2>
-      </div>
+      <header class="section__header reveal">
+        <p class="section__tag">04 &middot; Experience</p>
+        <h2 class="section__title" id="experience-title">Work History</h2>
+      </header>
 
-      <div class="timeline">
+      <div class="timeline" role="list" aria-label="Work history">
 
-        <!-- ── Role 1 ──────────────────────────────────── -->
-        <div class="timeline__item reveal">
+        <!-- Role 1 -->
+        <div class="timeline__item reveal" role="listitem">
           <div class="timeline__marker" aria-hidden="true">
             <span class="timeline__dot"></span>
             <span class="timeline__line"></span>
           </div>
           <div class="timeline__meta">
-            <p class="timeline__date">Aug 2022 to Jul 2024</p>
+            <time class="timeline__date" datetime="2022-08/2024-07">Aug 2022 – Jul 2024</time>
             <p class="timeline__company">Invisible Technologies</p>
             <p class="timeline__location">Remote (Contract)</p>
           </div>
@@ -624,100 +594,98 @@
           </div>
         </div>
 
-        <!-- ── Role 2 ──────────────────────────────────── -->
-        <div class="timeline__item reveal reveal-delay-1">
+        <!-- Role 2 -->
+        <div class="timeline__item reveal reveal-delay-1" role="listitem">
           <div class="timeline__marker" aria-hidden="true">
             <span class="timeline__dot"></span>
             <span class="timeline__line"></span>
           </div>
           <div class="timeline__meta">
-            <p class="timeline__date">Jul 2023 to Present</p>
+            <time class="timeline__date" datetime="2023-07">Jul 2023 – Present</time>
             <p class="timeline__company">Coles Supermarkets</p>
             <p class="timeline__location">Sydney, NSW</p>
           </div>
           <div class="timeline__content">
             <p class="timeline__role">Night Fill Team Member</p>
             <ul class="timeline__points">
-              <li>Maintained 20 hours of paid work per week throughout full-time Masters study, managing competing priorities consistently across two years.</li>
+              <li>Sustained 20&nbsp;hours of paid work per week throughout full-time Masters study, consistently managing competing priorities across two years.</li>
             </ul>
           </div>
         </div>
 
-        <!-- ── Role 3 ──────────────────────────────────── -->
-        <div class="timeline__item reveal reveal-delay-2">
+        <!-- Role 3 -->
+        <div class="timeline__item reveal reveal-delay-2" role="listitem">
           <div class="timeline__marker" aria-hidden="true">
             <span class="timeline__dot"></span>
           </div>
           <div class="timeline__meta">
-            <p class="timeline__date">Mar 2020 to Aug 2022</p>
+            <time class="timeline__date" datetime="2020-03/2022-08">Mar 2020 – Aug 2022</time>
             <p class="timeline__company">Tripura Secondary School</p>
             <p class="timeline__location">Kathmandu, Nepal</p>
           </div>
           <div class="timeline__content">
-            <p class="timeline__role">IT Systems and Data Supervisor</p>
+            <p class="timeline__role">IT Systems &amp; Data Supervisor</p>
             <ul class="timeline__points">
               <li>Designed and deployed school-wide relational databases and reporting systems from scratch, improving operational efficiency by around 25%.</li>
-              <li>Led a full migration to remote infrastructure during COVID-19 for 50+ students and staff with zero disruption to operations.</li>
+              <li>Led a full migration to remote infrastructure during COVID-19 for 50+&nbsp;students and staff with zero disruption to operations.</li>
             </ul>
           </div>
         </div>
 
-      </div><!-- /.timeline -->
-
-      <!-- Education subsection -->
-      <div class="section__subheader reveal">
-        <p class="section__tag">Education</p>
       </div>
 
-      <div class="edu__list">
+      <!-- Education -->
+      <header class="section__subheader reveal">
+        <p class="section__tag">Education</p>
+      </header>
 
-        <div class="edu-card reveal">
+      <div class="edu__list" role="list" aria-label="Education history">
+
+        <div class="edu-card reveal" role="listitem">
           <div class="edu-card__left">
             <p class="edu-card__degree">Master of Data Science and Innovation</p>
             <p class="edu-card__school">University of Technology Sydney (UTS)</p>
           </div>
           <div class="edu-card__right">
-            <p class="edu-card__date">Jun 2023 – Jun 2025</p>
-            <span class="edu-card__badge">GPA 6.09 / 7.0 · Academic Excellence Scholarship</span>
+            <time class="edu-card__date" datetime="2023-06/2025-06">Jun 2023 – Jun 2025</time>
+            <span class="edu-card__badge">GPA 6.09 / 7.0 &middot; Academic Excellence Scholarship</span>
           </div>
         </div>
 
-        <div class="edu-card reveal reveal-delay-1">
+        <div class="edu-card reveal reveal-delay-1" role="listitem">
           <div class="edu-card__left">
             <p class="edu-card__degree">Professional Year Program, Information Technology</p>
-            <p class="edu-card__school">QIBA · Sydney, NSW</p>
+            <p class="edu-card__school">QIBA &middot; Sydney, NSW</p>
           </div>
           <div class="edu-card__right">
-            <p class="edu-card__date">Jan 2026 – Present</p>
+            <time class="edu-card__date" datetime="2026-01">Jan 2026 – Present</time>
             <span class="edu-card__badge edu-card__badge--active">In Progress</span>
           </div>
         </div>
 
-        <div class="edu-card reveal reveal-delay-2">
+        <div class="edu-card reveal reveal-delay-2" role="listitem">
           <div class="edu-card__left">
             <p class="edu-card__degree">Bachelor of Engineering, Computer Science</p>
-            <p class="edu-card__school">Nitte Meenakshi Institute of Technology · India</p>
+            <p class="edu-card__school">Nitte Meenakshi Institute of Technology &middot; India</p>
           </div>
           <div class="edu-card__right">
-            <p class="edu-card__date">Jun 2017 – Jun 2021</p>
+            <time class="edu-card__date" datetime="2017-06/2021-06">Jun 2017 – Jun 2021</time>
           </div>
         </div>
 
-      </div><!-- /.edu__list -->
+      </div>
     </div>
   </section>
 
 
-  <!-- ═══════════════════════════════════════════════
-       CONTACT
-  ═══════════════════════════════════════════════ -->
-  <section id="contact" class="section section--last">
+  <!-- CONTACT -->
+  <section id="contact" class="section section--last" aria-labelledby="contact-title">
     <div class="section__inner">
 
-      <div class="section__header reveal">
-        <p class="section__tag">05 · Contact</p>
-        <h2 class="section__title">Get in Touch</h2>
-      </div>
+      <header class="section__header reveal">
+        <p class="section__tag">05 &middot; Contact</p>
+        <h2 class="section__title" id="contact-title">Get in Touch</h2>
+      </header>
 
       <div class="contact__grid">
         <div class="contact__text reveal">
@@ -725,60 +693,50 @@
             I'm actively looking for junior Data Analyst, Business Analyst, or ML Engineer roles
             in Sydney. If you have an opportunity or just want to talk data, my inbox is always open.
           </p>
-          <p>
-            I typically reply within 24 hours.
-          </p>
-          <button class="btn btn--primary contact__resume-btn" onclick="downloadResume()">
-            Download Resume (HTML)
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+          <p>I typically reply within 24 hours.</p>
+          <button class="btn btn--primary contact__resume-btn" onclick="downloadResume()" aria-label="Download resume as HTML file">
+            Download Resume
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true" focusable="false">
               <path d="M7 1v9M4 7l3 3 3-3M1 12h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </button>
         </div>
 
-        <div class="contact__links reveal reveal-delay-2">
+        <address class="contact__links reveal reveal-delay-2">
           <a href="mailto:shirishshakya4@gmail.com" class="contact-link">
-            <span class="contact-link__icon">✉️</span>
+            <span class="contact-link__icon" aria-hidden="true">✉️</span>
             <span class="contact-link__label">Email</span>
             <span class="contact-link__value">shirishshakya4@gmail.com</span>
           </a>
-          <a href="https://linkedin.com/in/shirish-man-shakya" target="_blank" rel="noopener" class="contact-link">
-            <span class="contact-link__icon">🔗</span>
+          <a href="https://linkedin.com/in/shirish-man-shakya" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="LinkedIn profile (opens in new tab)">
+            <span class="contact-link__icon" aria-hidden="true">🔗</span>
             <span class="contact-link__label">LinkedIn</span>
             <span class="contact-link__value">shirish-man-shakya</span>
           </a>
-          <a href="https://github.com/Shakya658" target="_blank" rel="noopener" class="contact-link">
-            <span class="contact-link__icon">💻</span>
+          <a href="https://github.com/Shakya658" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="GitHub profile (opens in new tab)">
+            <span class="contact-link__icon" aria-hidden="true">💻</span>
             <span class="contact-link__label">GitHub</span>
             <span class="contact-link__value">Shakya658</span>
           </a>
-          <a href="tel:0492877385" class="contact-link">
-            <span class="contact-link__icon">📞</span>
+          <a href="tel:+61492877385" class="contact-link">
+            <span class="contact-link__icon" aria-hidden="true">📞</span>
             <span class="contact-link__label">Phone</span>
             <span class="contact-link__value">0492 877 385</span>
           </a>
-        </div>
+        </address>
       </div>
-
     </div>
   </section>
 
 
-  <!-- ═══════════════════════════════════════════════
-       FOOTER
-  ═══════════════════════════════════════════════ -->
-  <footer class="footer">
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
     <div class="footer__inner">
       <p class="footer__name">Shirish Man Shakya</p>
-      <p class="footer__copy">© 2025 · Built with HTML &amp; CSS · Sydney, NSW</p>
+      <p class="footer__copy">&copy; <span id="footerYear"></span> &middot; Built with HTML &amp; CSS &middot; Sydney, NSW</p>
     </div>
   </footer>
 
-
-  <!-- ═══════════════════════════════════════════════
-       SCRIPTS
-  ═══════════════════════════════════════════════ -->
   <script src="assets/main.js"></script>
-
 </body>
 </html>
