@@ -214,7 +214,6 @@ function downloadResume() {
 <div class="tagline">Data Analyst &middot; ML Engineer &middot; Sydney, NSW</div>
 <div class="contacts">
   <span>&#128205; Sydney, NSW 2000</span>
-  <span>&#128222; 0492 877 385</span>
   <a href="mailto:shirishshakya4@gmail.com">shirishshakya4@gmail.com</a>
   <a href="https://linkedin.com/in/shirish-man-shakya">linkedin.com/in/shirish-man-shakya</a>
   <a href="https://github.com/Shakya658">github.com/Shakya658</a>
@@ -227,9 +226,9 @@ function downloadResume() {
   <p class="summary">
     Master of Data Science graduate from UTS (GPA 6.09/7.0 &middot; Academic Excellence Scholarship)
     with hands-on experience across the full data lifecycle &mdash; SQL pipelines, ML modelling,
-    explainable AI, and stakeholder-facing dashboards. Four end-to-end projects covering retail
-    analytics, telecom churn prediction ($120K revenue recovery), clinical AI, and cancer
-    genomics (HD capstone). Seeking a junior data analyst, business analyst, or ML engineer role
+    explainable AI, and stakeholder-facing dashboards. Five end-to-end projects covering SaaS revenue
+    analytics, retail analytics, telecom churn prediction ($120K revenue recovery), clinical AI, and
+    cancer genomics (HD capstone). Seeking a junior data analyst, business analyst, or ML engineer role
     in Sydney.
   </p>
   <div class="highlights">
@@ -243,6 +242,19 @@ function downloadResume() {
 <hr>
 <div class="section">
   <div class="section-title">Projects</div>
+
+  <div class="project">
+    <div class="project-header">
+      <span class="project-name">HarbourMetrics: SaaS Revenue &amp; Retention Analytics</span>
+      <span class="project-tag">PostgreSQL &middot; Power BI &middot; DAX &middot; KPI Engineering</span>
+    </div>
+    <div class="project-detail">
+      End-to-end SaaS BI platform simulating 2,000 customers across 24 months. Engineered MRR, churn,
+      and cohort KPIs in PostgreSQL with window functions and CTEs. Built an executive Power BI dashboard
+      with custom DAX measures and dynamic active subscriber tracking. Surfaced enterprise tier as primary
+      revenue engine and identified February churn spike and Q4 recovery pattern.
+    </div>
+  </div>
 
   <div class="project">
     <div class="project-header">
