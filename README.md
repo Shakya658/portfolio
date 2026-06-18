@@ -10,7 +10,7 @@ A responsive portfolio showcasing end-to-end data analytics, business intelligen
 
 - **HarbourMetrics:** SaaS revenue and retention analytics using PostgreSQL, Power BI and DAX
 - **Customer Churn Prediction:** XGBoost modelling and a Streamlit application built from 7,043 telecom customer records
-- **Retail Sales Analytics Pipeline:** PostgreSQL, dbt and Power BI pipeline covering more than 1.6 million transactions
+- **Retail Sales Analytics Pipeline:** PostgreSQL Medallion Architecture and Power BI pipeline covering more than 1.6 million rows
 - **30-Day Hospital Readmission Risk:** Explainable clinical prediction using XGBoost, SHAP, Optuna and Streamlit
 - **Cancer Risk Stratification:** UTS capstone using multi-omics data, clustering, PCA and SHAP
 
