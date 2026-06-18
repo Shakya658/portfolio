@@ -88,8 +88,8 @@
           </div>
           <div class="hero__stat-sep" aria-hidden="true"></div>
           <div class="hero__stat">
-            <dt class="hero__stat-label">Retention uplift modelled</dt>
-            <dd class="hero__stat-value">$120K</dd>
+            <dt class="hero__stat-label">Customer records analysed</dt>
+            <dd class="hero__stat-value">7K+</dd>
           </div>
           <div class="hero__stat-sep" aria-hidden="true"></div>
           <div class="hero__stat">
@@ -132,9 +132,9 @@
         </div>
 
         <div class="hero__card hero__card--auc">
-          <span class="hero__card-label">Best ROC&nbsp;AUC</span>
-          <span class="hero__card-value">0.85</span>
-          <span class="hero__card-sub">Churn model &middot; XGBoost</span>
+          <span class="hero__card-label">Models compared</span>
+          <span class="hero__card-value">3</span>
+          <span class="hero__card-sub">Churn analysis &middot; ML</span>
         </div>
 
         <div class="hero__card hero__card--gpa">
@@ -339,15 +339,15 @@
 
             <p class="project-card__summary">
               Analysed 7,043 telecom customer records to identify customers most at risk of leaving.
-              Compared Logistic Regression, Random Forest and XGBoost models using more than 15
-              engineered features. The best model achieved ROC&nbsp;AUC 0.85 and 81% accuracy, and the
-              analysis identified an estimated $120,000 annual retention opportunity.
+              Compared Logistic Regression, Random Forest and XGBoost using a stratified
+              train-validation-test workflow, validation-based threshold tuning and SHAP explanations
+              for customer-level churn risk.
             </p>
 
             <div class="project-card__details">
               <div class="detail">
                 <p class="detail__label">Key outcome</p>
-                <p class="detail__text">Estimated a $120,000 annual retention opportunity and presented customer-level risk through a self-service Streamlit application</p>
+                <p class="detail__text">Built a self-service Streamlit application for customer-level churn-risk assessment, model comparison and explainable retention analysis</p>
               </div>
               <div class="detail">
                 <p class="detail__label">Method</p>
@@ -357,7 +357,7 @@
 
             <ul class="project-card__stack" role="list" aria-label="Technologies used">
               <li><span class="tag tag--mono">Python</span></li>
-              <li><span class="tag tag--mono">SQL</span></li>
+              <li><span class="tag tag--mono">Threshold Tuning</span></li>
               <li><span class="tag tag--mono">XGBoost</span></li>
               <li><span class="tag tag--mono">SHAP</span></li>
               <li><span class="tag tag--mono">Streamlit</span></li>
@@ -391,7 +391,7 @@
               <div class="thumb-icon">🗄️</div>
               <p>Screenshot: <code>assets/proj-retail.jpg</code></p>
             </div>
-            <span class="project-card__badge">SQL &middot; dbt &middot; Power BI</span>
+            <span class="project-card__badge">SQL &middot; PostgreSQL &middot; Power BI</span>
           </div>
 
           <div class="project-card__body">
@@ -414,13 +414,13 @@
               </div>
               <div class="detail">
                 <p class="detail__label">Techniques</p>
-                <p class="detail__text">dbt models, CTEs, window functions, RFM segmentation, cohort retention analysis, Power BI dashboards</p>
+                <p class="detail__text">PostgreSQL transformations, CTEs, window functions, RFM segmentation, cohort retention analysis and Power BI dashboards</p>
               </div>
             </div>
 
             <ul class="project-card__stack" role="list" aria-label="Technologies used">
               <li><span class="tag tag--mono">PostgreSQL</span></li>
-              <li><span class="tag tag--mono">dbt</span></li>
+              <li><span class="tag tag--mono">Cohort Analysis</span></li>
               <li><span class="tag tag--mono">Power BI</span></li>
               <li><span class="tag tag--mono">SQL</span></li>
               <li><span class="tag tag--mono">Medallion Architecture</span></li>
@@ -464,15 +464,16 @@
             </div>
 
             <p class="project-card__summary">
-              Built a 30-day readmission risk model using 101,766 patient records and 96 features.
-              Used stratified cross-validation, Optuna tuning and SHAP to evaluate performance and
-              explain the main risk factors through a Streamlit application.
+              Analysed 101,766 hospital encounters and prepared a leakage-controlled modelling
+              dataset of 66,860 unique patients across 46 columns. Used stratified cross-validation,
+              Optuna tuning and SHAP to evaluate performance and explain the main risk factors through
+              a Streamlit application.
             </p>
 
             <div class="project-card__details">
               <div class="detail">
                 <p class="detail__label">Scale</p>
-                <p class="detail__text">101,766 patient records, 96 engineered features, stratified 5-fold CV</p>
+                <p class="detail__text">101,766 raw encounters, 66,860 unique patients after cleaning, 46 modelling columns and stratified 5-fold CV</p>
               </div>
               <div class="detail">
                 <p class="detail__label">Result</p>
@@ -482,7 +483,7 @@
 
             <ul class="project-card__stack" role="list" aria-label="Technologies used">
               <li><span class="tag tag--mono">Python</span></li>
-              <li><span class="tag tag--mono">SQL</span></li>
+              <li><span class="tag tag--mono">Pandas</span></li>
               <li><span class="tag tag--mono">XGBoost</span></li>
               <li><span class="tag tag--mono">SHAP</span></li>
               <li><span class="tag tag--mono">Optuna</span></li>
