@@ -439,5 +439,4 @@ document.addEventListener('DOMContentLoaded', () => {
   auditExternalLinks();
 });
 
-// Expose resume function globally for onclick attributes in HTML
-window.downloadResume = downloadResume;
+

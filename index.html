@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Shirish Man Shakya — Data Analyst and ML Engineer based in Sydney, NSW. UTS Master of Data Science graduate." />
+  <meta name="description" content="Shirish Man Shakya is a Sydney-based Data Analyst with experience in SQL, Power BI, Python, data quality, business intelligence and predictive analytics." />
   <meta name="theme-color" content="#080808" />
-  <title>Shirish Man Shakya | Data Analyst &amp; ML Engineer</title>
+  <title>Shirish Man Shakya | Data Analyst &amp; Business Intelligence</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -42,12 +42,18 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
 
-      <button class="nav__resume-btn" onclick="downloadResume()" aria-label="Download resume as HTML file">
+      <a
+        href="assets/Shirish_Man_Shakya_Resume.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="nav__resume-btn"
+        aria-label="View Shirish Man Shakya's resume (opens in a new tab)"
+      >
         <span>Resume</span>
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true" focusable="false">
           <path d="M6 1v7M3 5l3 3 3-3M1 10h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
-      </button>
+      </a>
     </div>
   </nav>
 
@@ -59,10 +65,10 @@
       <div class="hero__text">
         <div class="hero__available" role="status">
           <span class="hero__dot" aria-hidden="true"></span>
-          Open to opportunities &middot; Sydney, NSW
+          Open to opportunities across Australia
         </div>
 
-        <p class="hero__eyebrow">Data Analyst &amp; ML Engineer</p>
+        <p class="hero__eyebrow">Data Analyst &middot; Business Intelligence &middot; Predictive Analytics</p>
 
         <h1 class="hero__name">
           Shirish<br />
@@ -70,8 +76,9 @@
         </h1>
 
         <p class="hero__desc">
-          UTS Master of Data Science graduate (GPA&nbsp;6.09/7, Academic Excellence Scholarship).
-          I turn raw data into business decisions using SQL, Python, ML&nbsp;models and Power&nbsp;BI.
+          UTS Master of Data Science graduate with hands-on experience using SQL, Power&nbsp;BI and Python
+          to turn complex data into clear business insights. My work covers commercial reporting,
+          customer analytics, data quality and predictive modelling.
         </p>
 
         <dl class="hero__stats" aria-label="Key achievements">
@@ -168,10 +175,11 @@
             what a team does next.
           </p>
           <p>
-            Before Sydney I ran IT systems and databases for a school in Kathmandu, including a full
-            remote migration during COVID-19 for 50+&nbsp;staff and students. That role made me care a lot
-            about data reliability and clear reporting — not just clever analysis. I'm an ACS member,
-            currently in my Professional Year and actively looking for junior DA, BA or ML roles.
+            Before moving to Sydney, I managed IT systems, databases and reporting processes for a school
+            in Kathmandu. I also helped move more than 50 students and staff to remote operations during
+            COVID-19. That experience taught me that useful analytics depends on reliable data, practical
+            systems and clear communication. I'm an ACS member, currently completing my Professional Year,
+            and looking for Data Analyst, BI Analyst and related analytics opportunities.
           </p>
 
           <div class="about__photo-wrap reveal reveal-delay-2">
@@ -203,7 +211,7 @@
             </li>
             <li class="meta-item">
               <span class="meta-icon" aria-hidden="true">💼</span>
-              <span>Open to junior DA / BA / ML roles</span>
+              <span>Open to Data Analyst and BI opportunities</span>
             </li>
             <li class="meta-item">
               <span class="meta-icon" aria-hidden="true">🤝</span>
@@ -216,12 +224,12 @@
           </ul>
 
           <div class="about__tech-note">
-            <p class="about__tech-note-label">Currently learning</p>
+            <p class="about__tech-note-label">Currently working on</p>
             <div class="about__tech-tags">
-              <span class="tag">Databricks</span>
+              <span class="tag">PL-300</span>
               <span class="tag">dbt</span>
               <span class="tag">GCP</span>
-              <span class="tag">LangChain</span>
+              <span class="tag">AI Agents</span>
             </div>
           </div>
         </aside>
@@ -268,20 +276,19 @@
             </div>
 
             <p class="project-card__summary">
-              Built a full end-to-end SaaS business intelligence platform simulating 2,000 customers
-              across a 24-month history. Engineered MRR, churn, and cohort KPIs in PostgreSQL using
-              window functions and CTEs, then modelled an executive Power BI dashboard with custom
-              DAX measures, dynamic active subscriber tracking, and a premium corporate UX layer.
+              Built a SaaS analytics platform covering 2,000 simulated customers across 24 months.
+              Created PostgreSQL models for MRR, subscriber growth and churn, then developed an
+              executive Power BI dashboard using DAX and Power Query.
             </p>
 
             <div class="project-card__details">
               <div class="detail">
                 <p class="detail__label">Key insights</p>
-                <p class="detail__text">Enterprise tier identified as primary revenue engine despite lower subscriber count; February churn spike and Q4 recovery pattern surfaced for strategic action</p>
+                <p class="detail__text">Identified Enterprise customers as the largest source of revenue and found a period of Net MRR contraction in February</p>
               </div>
               <div class="detail">
                 <p class="detail__label">Method</p>
-                <p class="detail__text">PostgreSQL relational DDL, window functions, CTEs for MRR calculation; Power BI semantic model with DAX, Power Query, and executive storytelling canvas</p>
+                <p class="detail__text">PostgreSQL relational modelling, window functions and CTEs for KPI calculation; Power BI semantic modelling with DAX and Power Query</p>
               </div>
             </div>
 
@@ -310,7 +317,7 @@
           <div class="project-card__thumb">
             <img
               src="assets/proj-churn.jpg"
-              alt="Customer churn Power BI dashboard screenshot"
+              alt="Customer churn Streamlit application screenshot"
               class="project-card__img"
               width="800"
               height="350"
@@ -321,30 +328,30 @@
               <div class="thumb-icon">📊</div>
               <p>Screenshot: <code>assets/proj-churn.jpg</code></p>
             </div>
-            <span class="project-card__badge">ML &middot; Python &middot; Power BI</span>
+            <span class="project-card__badge">ML &middot; Python &middot; Streamlit</span>
           </div>
 
           <div class="project-card__body">
             <div class="project-card__header">
-              <h3 class="project-card__title">Customer Revenue &amp; Retention Analysis</h3>
+              <h3 class="project-card__title">Customer Churn Prediction &amp; Revenue Recovery</h3>
               <span class="project-card__year">Solo &middot; 2024</span>
             </div>
 
             <p class="project-card__summary">
-              Analysed 7,043 telecom customer records to identify churn risk. XGBoost with 15
-              engineered features hit 81% accuracy and ROC&nbsp;AUC 0.85 (cross-validated).
-              Estimated $120K annual retention uplift via targeted promotion simulation —
-              giving the commercial team a clear ROI case for action.
+              Analysed 7,043 telecom customer records to identify customers most at risk of leaving.
+              Compared Logistic Regression, Random Forest and XGBoost models using more than 15
+              engineered features. The best model achieved ROC&nbsp;AUC 0.85 and 81% accuracy, and the
+              analysis identified an estimated $120,000 annual retention opportunity.
             </p>
 
             <div class="project-card__details">
               <div class="detail">
                 <p class="detail__label">Key outcome</p>
-                <p class="detail__text">$120K uplift estimated via retention targeting simulation, 81% model accuracy, self-serve Power BI dashboard for stakeholders</p>
+                <p class="detail__text">Estimated a $120,000 annual retention opportunity and presented customer-level risk through a self-service Streamlit application</p>
               </div>
               <div class="detail">
                 <p class="detail__label">Method</p>
-                <p class="detail__text">Python, SQL, XGBoost with stratified cross-validation, SHAP explainability, Power BI reporting</p>
+                <p class="detail__text">Python, XGBoost, Scikit-learn, cross-validation, SHAP explainability and Streamlit</p>
               </div>
             </div>
 
@@ -353,7 +360,7 @@
               <li><span class="tag tag--mono">SQL</span></li>
               <li><span class="tag tag--mono">XGBoost</span></li>
               <li><span class="tag tag--mono">SHAP</span></li>
-              <li><span class="tag tag--mono">Power BI</span></li>
+              <li><span class="tag tag--mono">Streamlit</span></li>
               <li><span class="tag tag--mono">Scikit-learn</span></li>
             </ul>
 
@@ -403,7 +410,7 @@
             <div class="project-card__details">
               <div class="detail">
                 <p class="detail__label">Scale</p>
-                <p class="detail__text">1.6M+ rows, 9 relational tables, full Bronze → Gold Medallion pipeline in Snowflake</p>
+                <p class="detail__text">1.6M+ rows, 9 relational tables, full Bronze → Silver → Gold Medallion pipeline in PostgreSQL</p>
               </div>
               <div class="detail">
                 <p class="detail__label">Techniques</p>
@@ -412,12 +419,12 @@
             </div>
 
             <ul class="project-card__stack" role="list" aria-label="Technologies used">
-              <li><span class="tag tag--mono">SQL</span></li>
-              <li><span class="tag tag--mono">dbt</span></li>
-              <li><span class="tag tag--mono">Snowflake</span></li>
-              <li><span class="tag tag--mono">Power BI</span></li>
               <li><span class="tag tag--mono">PostgreSQL</span></li>
-              <li><span class="tag tag--mono">RFM</span></li>
+              <li><span class="tag tag--mono">dbt</span></li>
+              <li><span class="tag tag--mono">Power BI</span></li>
+              <li><span class="tag tag--mono">SQL</span></li>
+              <li><span class="tag tag--mono">Medallion Architecture</span></li>
+              <li><span class="tag tag--mono">RFM Analysis</span></li>
             </ul>
 
             <div class="project-card__footer">
@@ -457,11 +464,9 @@
             </div>
 
             <p class="project-card__summary">
-              Built and explained a clinical risk model on 101,766 patient records, engineering 96
-              features from raw EHR data. Used Bayesian tuning (Optuna, 50&nbsp;trials) and stratified
-              5-fold cross-validation to handle class imbalance. Achieved ROC&nbsp;AUC&nbsp;0.67 — consistent
-              with published benchmarks. SHAP explainability dashboard designed for non-technical
-              clinical users.
+              Built a 30-day readmission risk model using 101,766 patient records and 96 features.
+              Used stratified cross-validation, Optuna tuning and SHAP to evaluate performance and
+              explain the main risk factors through a Streamlit application.
             </p>
 
             <div class="project-card__details">
@@ -471,7 +476,7 @@
               </div>
               <div class="detail">
                 <p class="detail__label">Result</p>
-                <p class="detail__text">ROC AUC 0.67, in line with published clinical benchmarks for 30-day readmission prediction</p>
+                <p class="detail__text">ROC AUC 0.67 on a difficult and highly imbalanced clinical prediction problem</p>
               </div>
             </div>
 
@@ -521,20 +526,20 @@
             </div>
 
             <p class="project-card__summary">
-              Multi-omics analysis of 1,200 colorectal cancer patients integrating four biological
-              data types. Reduced dimensionality by 80% without losing clinical signal, then identified
-              3 distinct patient risk subgroups. SHAP surfaced the top 15 biomarkers per subgroup.
-              Awarded High Distinction by UTS examiners.
+              Analysed multi-omics data from 1,200 colorectal cancer patients across four biological
+              data types. Reduced dimensionality by 80% while retaining meaningful information,
+              identified 3 distinct patient risk groups and used SHAP to examine the most influential
+              biomarkers. The project received a High Distinction.
             </p>
 
             <div class="project-card__details">
               <div class="detail">
                 <p class="detail__label">Outcome</p>
-                <p class="detail__text">80% dimensionality reduction, 3 clinically meaningful risk subgroups, 15 biomarkers identified per group via SHAP</p>
+                <p class="detail__text">80% dimensionality reduction, 3 distinct patient risk groups and 15 influential biomarkers examined per group using SHAP</p>
               </div>
               <div class="detail">
                 <p class="detail__label">Grade</p>
-                <p class="detail__text">High Distinction — top academic performance, awarded by UTS examiners</p>
+                <p class="detail__text">Awarded a High Distinction as part of the UTS capstone project</p>
               </div>
             </div>
 
@@ -650,9 +655,9 @@
           <div class="timeline__content">
             <p class="timeline__role">Data Analyst</p>
             <ul class="timeline__points">
-              <li>Built Python scripts to extract, validate and structure data from billing PDFs across multiple enterprise client workflows, removing manual processing entirely.</li>
-              <li>Transformed unstructured source records into clean outputs for automated compliance reporting on a sustainability analytics platform, replacing a fully manual reporting cycle.</li>
-              <li>Maintained data accuracy across high-volume, varied datasets through systematic validation and cross-checking before data reached reporting and compliance outputs.</li>
+              <li>Automated billing-data extraction from PDF documents using Python and pdfplumber, reducing manual handling and improving the preparation of analysis-ready outputs.</li>
+              <li>Validated extracted records for accuracy, completeness and consistency before they entered client reporting and compliance workflows.</li>
+              <li>Standardised data-processing workflows and investigated data-quality exceptions across enterprise client engagements.</li>
             </ul>
           </div>
         </div>
@@ -671,7 +676,7 @@
           <div class="timeline__content">
             <p class="timeline__role">Night Fill Team Member</p>
             <ul class="timeline__points">
-              <li>Sustained 20&nbsp;hours of paid work per week throughout full-time Masters study, consistently managing competing priorities across two years.</li>
+              <li>Developed firsthand understanding of Coles store operations, stock movement and retail execution while maintaining approximately 20&nbsp;hours of employment per week alongside full-time postgraduate study.</li>
             </ul>
           </div>
         </div>
@@ -689,8 +694,8 @@
           <div class="timeline__content">
             <p class="timeline__role">IT Systems &amp; Data Supervisor</p>
             <ul class="timeline__points">
-              <li>Designed and deployed school-wide relational databases and reporting systems from scratch, improving operational efficiency by around 25%.</li>
-              <li>Led a full migration to remote infrastructure during COVID-19 for 50+&nbsp;students and staff with zero disruption to operations.</li>
+              <li>Designed and maintained school databases, reporting processes and IT systems.</li>
+              <li>Led the migration to remote operations during COVID-19 for more than 50 students and staff.</li>
             </ul>
           </div>
         </div>
@@ -753,16 +758,21 @@
       <div class="contact__grid">
         <div class="contact__text reveal">
           <p>
-            I'm actively looking for junior Data Analyst, Business Analyst, or ML Engineer roles
-            in Sydney. If you have an opportunity or just want to talk data, my inbox is always open.
+            I'm currently looking for Data Analyst, BI Analyst and related analytics opportunities
+            across Australia. If you have an opportunity or would like to talk data, my inbox is open.
           </p>
-          <p>I typically reply within 24 hours.</p>
-          <button class="btn btn--primary contact__resume-btn" onclick="downloadResume()" aria-label="Download resume as HTML file">
-            Download Resume
+          <a
+            href="assets/Shirish_Man_Shakya_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn--primary contact__resume-btn"
+            aria-label="View Shirish Man Shakya's resume (opens in a new tab)"
+          >
+            View Resume
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true" focusable="false">
               <path d="M7 1v9M4 7l3 3 3-3M1 12h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-          </button>
+          </a>
         </div>
 
         <address class="contact__links reveal reveal-delay-2">
